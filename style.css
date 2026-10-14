@@ -479,6 +479,13 @@ ul, ol { list-style: none; }
 /* ════════════════════════════════════════════════════════════
    SHOWREEL
    ════════════════════════════════════════════════════════════ */
+/* Featured 16:9 film */
+.featured { background: var(--black); padding: clamp(72px, 9vw, 120px) 0 0; }
+.featured__inner { max-width: 1400px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 64px); }
+.featured .reel__player { max-width: 100%; }
+.featured__meta { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.featured__tag { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white-dim); }
+
 .reel {
   background: var(--black);
   padding: clamp(64px, 8vw, 100px) 0 0;

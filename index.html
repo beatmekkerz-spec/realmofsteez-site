@@ -51,11 +51,10 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav__links" id="navLinks" role="list">
-      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li><a href="#films" class="nav__link">Films</a></li>
+      <li><a href="#portfolio" class="nav__link">Collaborations</a></li>
+      <li><a href="#concepts" class="nav__link">House Concepts</a></li>
       <li><a href="#about" class="nav__link">About</a></li>
-      <li><a href="#services" class="nav__link">Services</a></li>
-      <li><a href="/journal" class="nav__link">Journal</a></li>
-      <li><a href="/press" class="nav__link">Press</a></li>
       <li><a href="#contact" class="nav__link">Contact</a></li>
     </ul>
   </nav>
@@ -92,7 +91,7 @@
       <h1 class="sr-only">Realm of Steez — Cinematic Short Film Production</h1>
 
       <div class="hero__cta-wrap">
-        <a href="#portfolio" class="hero__cta" aria-label="View our cinematic portfolio">
+        <a href="#films" class="hero__cta" aria-label="View our cinematic portfolio">
           <span>View Portfolio</span>
           <svg class="hero__cta-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,14 +136,47 @@
   </div>
 
   <!-- ═══════════════════════════════════════════════════ -->
+  <!--  FEATURED FILM (16:9)                               -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="featured" id="films" aria-labelledby="featured-heading">
+    <div class="featured__inner">
+      <div class="section-header">
+        <span class="section-label" aria-hidden="true">Featured Film</span>
+        <h2 class="section-title" id="featured-heading">Verrier &mdash; The Mirror</h2>
+        <p class="section-sub">A father on a night train out of Locarno. His daughter on the moon. Two watches that keep the same minute.</p>
+      </div>
+      <div class="reel__player reel__player--landscape featured__player" data-reel>
+        <video playsinline muted loop preload="none" poster="assets/concepts/verrier/images/vr-split.jpg"
+          data-src-desktop="assets/concepts/verrier/videos/verrier-film.mp4"
+          data-src-mobile="assets/concepts/verrier/videos/verrier-film.mp4">
+          <source src="assets/concepts/verrier/videos/verrier-film.mp4" type="video/mp4" />
+        </video>
+        <div class="reel__play" data-reel-play>
+          <div class="reel__play-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <span class="reel__play-label">Play</span>
+        </div>
+        <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
+        </div>
+      </div>
+      <div class="featured__meta">
+        <span class="featured__tag">House Concept &middot; Locarno, Switzerland &middot; 53s</span>
+        <a href="/verrier" class="portfolio__link">View Case Study <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
   <!--  SHOWREEL                                           -->
   <!-- ═══════════════════════════════════════════════════ -->
-  <section class="reel" id="reel" aria-label="Short Films">
+  <section class="reel" id="reel" aria-label="Vertical Films">
     <div class="reel__inner">
 
       <div class="section-header">
         <span class="section-label" aria-hidden="true">Film</span>
-        <h2 class="section-title">Short Films</h2>
+        <h2 class="section-title">Vertical Films</h2>
       </div>
 
       <div class="reel__dual">
@@ -641,9 +673,12 @@
         <p class="footer__tagline">Cinematic Short Film Production</p>
       </div>
       <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#portfolio" class="footer__link">Portfolio</a>
-        <a href="#about" class="footer__link">About</a>
+        <a href="#films" class="footer__link">Films</a>
+        <a href="#portfolio" class="footer__link">Collaborations</a>
+        <a href="#concepts" class="footer__link">House Concepts</a>
         <a href="#services" class="footer__link">Services</a>
+        <a href="/journal" class="footer__link">Journal</a>
+        <a href="/press" class="footer__link">Press</a>
         <a href="#contact" class="footer__link">Contact</a>
         <a href="/journal" class="footer__link">Journal</a>
         <a href="/press" class="footer__link">Press</a>

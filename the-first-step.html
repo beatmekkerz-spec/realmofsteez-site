@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE FIRST STEP — House Concept | Realm of Steez</title>
+  <meta name="description" content="THE FIRST STEP — A House of Realm of Steez concept. A Nike-inspired spec ad set on Mars. When an ancient world watches humanity take its first stride on alien soil, it feels something for the first time in four billion years." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="THE FIRST STEP — Realm of Steez Concept" />
+  <meta property="og:description" content="A Nike-inspired spec ad set on Mars. Four billion years of silence. And I have never once been moved." />
+  <meta property="og:url" content="https://realmofsteez.com/the-first-step" />
+  <meta property="og:image" content="https://realmofsteez.com/assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-bLlRBKTlqsKlKu2VkBqk-Cinematic_photorealistic_film_still_916_vertical_e_delpmaspu.jpeg" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="THE FIRST STEP — Realm of Steez Concept" />
+  <meta name="twitter:description" content="A Nike-inspired spec ad set on Mars. Four billion years of silence. And I have never once been moved." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-bLlRBKTlqsKlKu2VkBqk-Cinematic_photorealistic_film_still_916_vertical_e_delpmaspu.jpeg" />
+  <link rel="canonical" href="https://realmofsteez.com/the-first-step" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #111;
+      --dark:       #161616;
+      --mid:        #1e1e1e;
+      --gold:       #C9A84C;
+      --gold-light: #D4B96A;
+      --gold-dim:   rgba(201,168,76,0.45);
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.55);
+      --white-xdim: rgba(245,240,232,0.2);
+      --mars-rust:  #8B3A1A;
+      --mars-amber: #C2642C;
+      --mars-sand:  #D4956B;
+      --cyan:       #00E5FF;
+      --border:     rgba(201,168,76,0.18);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'Montserrat', Helvetica, Arial, sans-serif;
+      --ease-luxury: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--gold); color: var(--black); }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
+
+    img, video { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px clamp(24px, 5vw, 80px);
+      background: rgba(8,8,8,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__logo { font-family: var(--sans); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.35em; color: var(--gold); }
+    .nav__back { font-family: var(--sans); font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; color: var(--white-dim); transition: color 0.3s; }
+    .nav__back:hover { color: var(--gold); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .hero__video-wrap {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero__video {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: 0.4;
+    }
+    .hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.3) 40%, rgba(8,8,8,0.8) 100%);
+    }
+    .hero__content {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 900px;
+    }
+    .hero__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+    .hero__subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    /* ── Sections ── */
+    .section {
+      padding: clamp(80px, 10vw, 160px) clamp(24px, 5vw, 80px);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section--wide {
+      max-width: 1400px;
+    }
+    .section__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 40px;
+      color: var(--white);
+    }
+    .section__text {
+      font-family: var(--serif);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--white-dim);
+      max-width: 750px;
+    }
+    .section__text + .section__text { margin-top: 24px; }
+    .section__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold-dim);
+      margin: 60px 0;
+    }
+
+    /* ── Video Player ── */
+    .video-showcase {
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--charcoal);
+    }
+    .video-wrap video {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Narration Panels ── */
+    .narration {
+      position: relative;
+      width: 100%;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .narration__img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .narration__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .narration__overlay--dark {
+      background: linear-gradient(180deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.35) 40%, rgba(8,8,8,0.65) 100%);
+    }
+    .narration__overlay--heavy {
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.5) 40%, rgba(8,8,8,0.75) 100%);
+    }
+    .narration__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px clamp(24px, 8vw, 120px);
+      max-width: 800px;
+    }
+    .narration__text {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.92;
+    }
+    .narration__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .narration--short { min-height: 50vh; }
+    .narration--tall { min-height: 100vh; }
+
+    /* ── Narration Pair (side-by-side image + text) ── */
+    .narration-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+    .narration-pair__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .narration-pair__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(40px, 6vw, 100px);
+      background: var(--charcoal);
+    }
+    .narration-pair__text {
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.9;
+    }
+    .narration-pair__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    @media (max-width: 768px) {
+      .narration-pair { grid-template-columns: 1fr; }
+      .narration-pair__img { height: 50vh; }
+    }
+
+    /* ── Stats Grid ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .stat__value {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat__label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--white-dim);
+      text-transform: uppercase;
+    }
+
+    /* ── Image Grid ── */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 40px;
+    }
+    .image-grid img {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 768px) {
+      .image-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Three Worlds ── */
+    .worlds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .world__title {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .world__subtitle {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .world__text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--white-dim);
+    }
+
+    /* ── Colour Palette ── */
+    .palette {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .swatch__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--white-dim);
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    /* ── Tagline ── */
+    .tagline-section {
+      text-align: center;
+      padding: clamp(120px, 15vw, 240px) clamp(24px, 5vw, 80px);
+    }
+    .tagline {
+      font-family: var(--sans);
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .tagline span { color: var(--gold); }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 60px clamp(24px, 5vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+    .footer__text {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--white-xdim);
+    }
+    .footer__link { color: var(--gold-dim); transition: color 0.3s; }
+    .footer__link:hover { color: var(--gold); }
+
+    /* ── Animations ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <a href="/" class="nav__logo">REALM OF STEEZ</a>
+    <a href="/" class="nav__back">&larr; BACK TO HOME</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__video-wrap">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto">
+        <source src="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">House Concept</p>
+      <h1 class="hero__title">The First Step</h1>
+      <p class="hero__subtitle">On a world that was never built for us,<br>one athlete chose to run.</p>
+    </div>
+  </section>
+
+  <!-- The Film -->
+  <div class="video-showcase fade-in" style="margin-top: -60px; position: relative; z-index: 3;">
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-bLlRBKTlqsKlKu2VkBqk-Cinematic_photorealistic_film_still_916_vertical_e_delpmaspu.jpeg">
+        <source src="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <!-- The Idea -->
+  <section class="section fade-in">
+    <p class="section__label">The Idea</p>
+    <h2 class="section__title">Breaking the boundary<br>between earth and everywhere.</h2>
+    <p class="section__text">
+      Every great brand moment begins with a question that has no practical answer. Not "can we get there?" but "once we arrive, what makes us human?" THE FIRST STEP is a spec concept imagining the moment an athlete takes their first stride on Martian soil. Not for science. Not for conquest. For the pure, irrational, deeply human refusal to be still.
+    </p>
+    <p class="section__text">
+      Mars itself narrates. A four-billion-year-old entity that has watched the universe in silence, suddenly confronted by something it never expected: someone who came not with a flag, not with a mission, but with running shoes. And for the first time in the planet's ancient existence, it felt something.
+    </p>
+
+    <div class="stats">
+      <div>
+        <p class="stat__value">~63s</p>
+        <p class="stat__label">Runtime</p>
+      </div>
+      <div>
+        <p class="stat__value">19</p>
+        <p class="stat__label">Clips</p>
+      </div>
+      <div>
+        <p class="stat__value">9:16</p>
+        <p class="stat__label">Designed for Mobile</p>
+      </div>
+      <div>
+        <p class="stat__value">7</p>
+        <p class="stat__label">Audio Layers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NARRATION: ACT 1 — THE WATCHING ═══ -->
+
+  <!-- Panel 1: Eyes — "I have watched your kind..." -->
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-UAUsN08PwnjKAdwRRYkt-Macro_eye_with_dust_particles_24418c76d3.jpeg" alt="Macro eye with Mars dust particles" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content">
+      <p class="narration__text">
+        I have watched your kind...<br>
+        from the moment you first <em>looked up.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Panel 2: Wide landscape — "Fragile things..." -->
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-ciFkybFWTJNqPB1YsAxN-Man_standing_on_mars_a269875f75.jpeg" alt="Athlete standing alone on Mars" loading="lazy" />
+    <div class="narration-pair__content">
+      <p class="narration-pair__text">
+        Fragile things.<br>
+        Building towers out of sand.<br>
+        Planting flags in places <em>you cannot breathe.</em>
+      </p>
+    </div>
+  </div>
+
+  <!-- Panel 3: Fingers in dust — "Your need... to own..." -->
+  <section class="narration fade-in">
+    <img class="narration__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-SKfsZBeBco9WPElvxVlk-Cinematic_film_still_photorealistic_not_cgi_extrem_30ed9f82c6.jpeg" alt="Close-up hand pressing into Mars dust" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content">
+      <p class="narration__text">
+        You come with your machines.<br>
+        Your measurements.<br>
+        Your need... to own <em>what was never yours.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ NARRATION: ACT 2 — THE REJECTION ═══ -->
+
+  <!-- Panel 4: Shoe footprint — "I was not built for you." -->
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-5ipdybBKcySEpbchpjzM-Shoe_footprint_in_alien_soil_3128c03131.jpeg" alt="Shoe footprint in alien Martian soil" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;">
+      <p class="narration-pair__text">
+        <em>I was not built for you.</em><br><br>
+        My soil was not made for your feet.<br>
+        My air will not fill your lungs.<br>
+        My silence... does not want your noise.
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ THE THREE WORLDS ═══ -->
+  <section class="section fade-in">
+    <p class="section__label">Visual Architecture</p>
+    <h2 class="section__title">Three worlds. One stride.</h2>
+
+    <div class="worlds">
+      <div>
+        <p class="world__subtitle">World 1</p>
+        <h3 class="world__title">The Surface</h3>
+        <p class="world__text">
+          Rust red dust, rocky alien terrain, butterscotch horizon. This is where the running happens. Low angles, wide establishing shots, the athlete reduced to a speck against geological enormity.
+        </p>
+      </div>
+      <div>
+        <p class="world__subtitle">World 2</p>
+        <h3 class="world__title">The Body</h3>
+        <p class="world__text">
+          Macro intimacy. The camera treats skin, muscle, and sweat the way nature documentaries treat terrain. Dust caught in eyelashes. Sweat catching golden light. The body as landscape.
+        </p>
+      </div>
+      <div>
+        <p class="world__subtitle">World 3</p>
+        <h3 class="world__title">The Dust</h3>
+        <p class="world__text">
+          Mars dust storms reimagined as the dreamlike element. Particles floating in slow motion, backlit by sun. The athlete moves through dust the way water moves through dreams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NARRATION: ACT 3 — THE TURN ═══ -->
+
+  <!-- Panel 5: Sprinting — "But this one..." -->
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-BQg7tVcgge6vBpGucaOR-Athlete_sprinting_on_alien_terrain_c03876e998.jpeg" alt="Athlete sprinting through Mars dust" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content">
+      <p class="narration__text">
+        But this one...<br><br>
+        This one did not come with a flag.<br>
+        Did not come with a mission.<br>
+        Did not come to take.<br><br>
+        <em>This one... came to run.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Panel 6: Athlete on horizon — "No record. No clock." -->
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-sAPV6jXffcYbj6qMIXQW-Athlete_standing_on_mars_699dfda95d.jpeg" alt="Athlete silhouetted on Mars horizon" loading="lazy" />
+    <div class="narration-pair__content">
+      <p class="narration-pair__text">
+        No record. No clock. No audience.<br><br>
+        Just dust...<br>
+        and the <em>refusal to be still.</em>
+      </p>
+    </div>
+  </div>
+
+  <!-- ═══ NARRATION: ACT 4 — THE SURRENDER ═══ -->
+
+  <!-- Panel 7: Lying on Mars — "Four billion years..." -->
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-iJpvCRqASayyxjikrH28-Athlete_lying_on_alien_ground_002dd1bb75.jpeg" alt="Athlete lying on Mars ground in surrender" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content">
+      <p class="narration__text">
+        Four billion years of silence.<br><br>
+        And I have <em>never once</em>...<br><br>
+        ...<em>been moved.</em>
+      </p>
+    </div>
+  </section>
+
+  <!-- Remaining Stills Grid -->
+  <section class="section section--wide fade-in">
+    <p class="section__label">Selected Frames</p>
+    <h2 class="section__title">From the concept.</h2>
+    <div class="image-grid">
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-4THn2gdlg45RleUpfldG-Athlete_standing_on_mars_9b1ba1a32b.jpeg" alt="Athlete standing on Mars" loading="lazy" />
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-cMtm9iu1rjrBJzKM5ROj-Man_sprinting_through_mars_dust_0067a37606.jpeg" alt="Man sprinting through Mars dust" loading="lazy" />
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-ti6Od1R9EvVyZMHeyKT2-Athlete_choosing_mars_doorway_b41a2fc85b.jpeg" alt="Athlete at Mars doorway" loading="lazy" />
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-qVWrA6Ub5d8MclClfeAk-Athlete_sprinting_in_dust_cloud_eda4a7fa1d.jpeg" alt="Athlete sprinting in dust cloud" loading="lazy" />
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-urXwEnTm5XTclUC9a4yz-Male_athletes_bare_torso_e0d0956127.jpeg" alt="Athlete bare torso macro detail" loading="lazy" />
+      <img src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-cvrKaxdxKs2s2vOr9de5-Freepik__cinematicfilmstillphotorealisticnotcgieff_4b21ec9e6a.jpeg" alt="Cinematic Mars film still" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Colour Strategy -->
+  <section class="section fade-in">
+    <p class="section__label">Colour Strategy</p>
+    <h2 class="section__title">Three tones. Maximum contrast.</h2>
+    <p class="section__text">
+      The entire palette is built on chromatic opposition. Warm rust Mars environment, neutral black compression suit anchoring the athlete, and electric cyan shoes that cut through the frame like ice on fire. The shoes pop because everything else is drained toward earth tones.
+    </p>
+    <div class="palette">
+      <div>
+        <div class="swatch" style="background: #8B3A1A;"></div>
+        <p class="swatch__label">Mars Rust</p>
+      </div>
+      <div>
+        <div class="swatch" style="background: #C2642C;"></div>
+        <p class="swatch__label">Amber</p>
+      </div>
+      <div>
+        <div class="swatch" style="background: #D4956B;"></div>
+        <p class="swatch__label">Sand</p>
+      </div>
+      <div>
+        <div class="swatch" style="background: #2C2C2C;"></div>
+        <p class="swatch__label">Suit Black</p>
+      </div>
+      <div>
+        <div class="swatch" style="background: #00E5FF;"></div>
+        <p class="swatch__label">Cyan Shoe</p>
+      </div>
+      <div>
+        <div class="swatch" style="background: #F5F0E8;"></div>
+        <p class="swatch__label">Highlight</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section fade-in">
+    <p class="section__label">Process</p>
+    <h2 class="section__title">Built entirely with AI.</h2>
+    <p class="section__text">
+      Every frame of THE FIRST STEP was conceived, generated, and assembled using AI tools. Still frames generated through Freepik Spaces and upscaled through Magnific. Video clips brought to life through Seedance 2.0 and Kling 3.0, with motion prompts written in Chinese for maximum quality from Seedance. Voiceover crafted through ElevenLabs. Music generated through Suno. Final assembly, colour grade, and sound design completed in CapCut and Premiere Pro.
+    </p>
+    <p class="section__text">
+      This is a demonstration of what becomes possible when creative direction meets the new generation of generative tools. Not as a replacement for traditional filmmaking, but as an entirely new canvas for concepts that would otherwise require planetary-scale budgets.
+    </p>
+  </section>
+
+  <!-- Tagline -->
+  <section class="tagline-section fade-in">
+    <p class="tagline">Just <span>Steeze</span> It.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">
+      &copy; 2026 <a href="/" class="footer__link">REALM OF STEEZ</a> &mdash; House Concept. Not affiliated with Nike, Inc.
+    </p>
+  </footer>
+
+  <!-- Scroll Animations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

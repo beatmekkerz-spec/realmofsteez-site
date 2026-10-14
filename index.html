@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Realm of Steez — Private cinematic short film production house. Built for brands and visionaries who understand the distance between content and legacy." />
+  <meta name="author" content="Realm of Steez" />
+  <meta property="og:title" content="Realm of Steez | Cinematic Short Film Production" />
+  <meta property="og:description" content="Private cinematic short film production. Every frame authored with precision, craft, and uncompromising intention." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://realmofsteez.com/" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta property="og:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Realm of Steez | Cinematic Short Film Production" />
+  <meta name="twitter:description" content="Private cinematic short film production. Every frame authored with precision, craft, and uncompromising intention." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
+  <title>Realm of Steez | Cinematic Short Film Production</title>
+  <link rel="canonical" href="https://realmofsteez.com/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=22" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Realm of Steez",
+    "description": "Private cinematic short film production house for luxury brands.",
+    "url": "https://realmofsteez.com",
+    "email": "studio@realmofsteez.com",
+    "image": "https://realmofsteez.com/assets/ROS/websiteimagewide.png",
+    "foundingDate": "2020",
+    "knowsAbout": ["Film Production", "Short Films", "Brand Campaigns", "Visual Storytelling"]
+  }
+  </script>
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  NAVIGATION                                         -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__logo">
+      <span class="nav__logo-text">REALM OF STEEZ</span>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="/journal" class="nav__link">Journal</a></li>
+      <li><a href="/press" class="nav__link">Press</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  HERO — Full-screen cinematic intro                 -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero section">
+
+    <!-- Video background placeholder (replace src with actual portal video) -->
+    <div class="hero__video-wrap">
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+        data-src-desktop="assets/ROS/kling_20260221_Image_to_Video_The_glowin_100_1.mp4"
+        data-src-mobile="assets/ROS/hero-mobile.mp4"
+        poster="assets/ROS/websiteimagewide.png">
+        <source src="assets/ROS/kling_20260221_Image_to_Video_The_glowin_100_1.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay" aria-hidden="true"></div>
+    </div>
+
+    <!-- Cinematic grain overlay -->
+    <div class="hero__grain" aria-hidden="true"></div>
+
+    <!-- Hero content -->
+    <div class="hero__content">
+      <!-- Title is carried by the hero background image -->
+      <h1 class="sr-only">Realm of Steez — Cinematic Short Film Production</h1>
+
+      <div class="hero__cta-wrap">
+        <a href="#portfolio" class="hero__cta" aria-label="View our cinematic portfolio">
+          <span>View Portfolio</span>
+          <svg class="hero__cta-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span class="hero__scroll-text">Scroll</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  MARQUEE STRIP                                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>FILM PRODUCTION</span>
+      <span class="marquee__dot">✦</span>
+      <span>VISUAL DIRECTION</span>
+      <span class="marquee__dot">✦</span>
+      <span>AI STORYTELLING</span>
+      <span class="marquee__dot">✦</span>
+      <span>CINEMATIC WORLDS</span>
+      <span class="marquee__dot">✦</span>
+      <span>LUXURY CREATIVE</span>
+      <span class="marquee__dot">✦</span>
+      <span>FILM PRODUCTION</span>
+      <span class="marquee__dot">✦</span>
+      <span>VISUAL DIRECTION</span>
+      <span class="marquee__dot">✦</span>
+      <span>AI STORYTELLING</span>
+      <span class="marquee__dot">✦</span>
+      <span>CINEMATIC WORLDS</span>
+      <span class="marquee__dot">✦</span>
+      <span>LUXURY CREATIVE</span>
+      <span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  SHOWREEL                                           -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="reel" id="reel" aria-label="Short Films">
+    <div class="reel__inner">
+
+      <div class="section-header">
+        <span class="section-label" aria-hidden="true">Film</span>
+        <h2 class="section-title">Short Films</h2>
+      </div>
+
+      <div class="reel__dual">
+
+        <!-- Complice -->
+        <div class="reel__column">
+          <div class="reel__header">
+            <span class="section-label" aria-hidden="true">Short Film</span>
+            <h2 class="reel__title">Complice AM Serum</h2>
+          </div>
+          <div class="reel__player" id="reelPlayer" data-reel>
+            <video
+              id="reelVideo"
+              playsinline
+              muted
+              loop
+              preload="none"
+              poster="assets/Complice Collaboration/complice/still-portrait.jpg"
+              data-src-desktop="assets/Complice Collaboration/complice/film.mp4"
+              data-src-mobile="assets/Complice Collaboration/complice/film-mobile.mp4"
+            >
+              <source src="assets/Complice Collaboration/complice/film.mp4" type="video/mp4" />
+            </video>
+            <div class="reel__play" data-reel-play>
+              <div class="reel__play-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <span class="reel__play-label">Play</span>
+            </div>
+            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Noirème -->
+        <div class="reel__column">
+          <div class="reel__header">
+            <span class="section-label" aria-hidden="true">Short Film</span>
+            <h2 class="reel__title" style="font-family:'Playfair Display','Cormorant Garamond',serif;">Noirème</h2>
+          </div>
+          <div class="reel__player" id="reelPlayerNoireme" data-reel>
+            <video
+              playsinline
+              muted
+              loop
+              preload="none"
+              poster="assets/noir%C3%A8me/images/noireme-film-poster.jpg"
+              data-src-desktop="assets/noir%C3%A8me/videos/noireme-film.mp4"
+              data-src-mobile="assets/noir%C3%A8me/videos/noireme-film-mobile.mp4"
+            >
+              <source src="assets/noir%C3%A8me/videos/noireme-film.mp4" type="video/mp4" />
+            </video>
+            <div class="reel__play" data-reel-play>
+              <div class="reel__play-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <span class="reel__play-label">Play</span>
+            </div>
+            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- The First Step -->
+        <div class="reel__column">
+          <div class="reel__header">
+            <span class="section-label" aria-hidden="true">Short Film</span>
+            <h2 class="reel__title">The First Step</h2>
+          </div>
+          <div class="reel__player" id="reelPlayerMars" data-reel>
+            <video
+              playsinline
+              muted
+              loop
+              preload="none"
+              poster="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-bLlRBKTlqsKlKu2VkBqk-Cinematic_photorealistic_film_still_916_vertical_e_delpmaspu.jpeg"
+              data-src-desktop="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4"
+              data-src-mobile="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4"
+            >
+              <source src="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4" type="video/mp4" />
+            </video>
+            <div class="reel__play" data-reel-play>
+              <div class="reel__play-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <span class="reel__play-label">Play</span>
+            </div>
+            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  PORTFOLIO                                          -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  COLLABORATIONS                                    -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="portfolio" id="portfolio" aria-labelledby="collab-heading">
+
+    <div class="section-header">
+      <span class="section-label" aria-hidden="true">01</span>
+      <h2 class="section-title" id="collab-heading">Collaborations</h2>
+      <p class="section-sub">Current work with brands</p>
+    </div>
+
+    <div class="portfolio__grid" role="tabpanel">
+      <article class="portfolio__item portfolio__item--wide" data-category="collaboration" data-project="complice-skin" aria-label="Project: Complice">
+        <div class="portfolio__media">
+          <img class="portfolio__img" src="assets/ROS/complice/images/pm-serum/pm-serum-06.jpg" alt="Complice — cinematic beauty campaign" loading="lazy" />
+        </div>
+        <div class="portfolio__info">
+          <span class="portfolio__cat">Collaboration</span>
+          <h3 class="portfolio__title">
+            <img src="assets/ROS/complice/images/complice gold logo new.png" alt="Complice" class="portfolio__brand-logo" />
+          </h3>
+          <p class="portfolio__desc">A cinematic beauty campaign blending luxury skincare with immersive visual storytelling.</p>
+          <a href="/complice-collaboration" class="portfolio__link" aria-label="View Complice collaboration">View Collaboration <span aria-hidden="true">→</span></a>
+          <a href="/complice-case-study" class="portfolio__link" aria-label="View Complice case study">View Case Study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  HOUSE CONCEPTS                                    -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="portfolio portfolio--concepts" id="concepts" aria-labelledby="concepts-heading">
+
+    <div class="section-header">
+      <span class="section-label" aria-hidden="true">01.1</span>
+      <h2 class="section-title" id="concepts-heading">House Concepts</h2>
+      <p class="section-sub">Original work from the house</p>
+    </div>
+
+    <div class="portfolio__grid" role="tabpanel">
+      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/verrier.html" aria-label="Project: Verrier">
+        <div class="portfolio__media">
+          <img class="portfolio__img" src="assets/concepts/verrier/images/vr-split.jpg" alt="Verrier — moonphase watch concept by Realm of Steez" loading="lazy" />
+        </div>
+        <div class="portfolio__info">
+          <span class="portfolio__cat">House Concept</span>
+          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Verrier</h3>
+          <p class="portfolio__desc">A father on a night train out of Locarno. His daughter on the moon. Two moonphase watches that keep the same minute.</p>
+          <a href="/verrier.html" class="portfolio__link" aria-label="View Verrier case study">View Case Study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/nuit-blanche.html" aria-label="Project: Nuit Blanche">
+        <div class="portfolio__media">
+          <img class="portfolio__img" src="assets/concepts/nuit-blanche/images/nb-hud.jpg" alt="Nuit Blanche — night ski goggle concept by Realm of Steez" loading="lazy" />
+        </div>
+        <div class="portfolio__info">
+          <span class="portfolio__cat">House Concept</span>
+          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Nuit Blanche</h3>
+          <p class="portfolio__desc">At midnight they kill the lights. She isn't done. A night ski goggle that sees by starlight, launched in Chamonix.</p>
+          <a href="/nuit-blanche.html" class="portfolio__link" aria-label="View Nuit Blanche case study">View Case Study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/noireme.html" aria-label="Project: Noirème">
+        <div class="portfolio__media">
+          <img class="portfolio__img" src="assets/noir%C3%A8me/images/02-candlelight.jpeg" alt="Noirème — house concept by Realm of Steez" loading="lazy" />
+        </div>
+        <div class="portfolio__info">
+          <span class="portfolio__cat">House Concept</span>
+          <h3 class="portfolio__title" style="font-family:'Playfair Display','Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);letter-spacing:0.04em;">Noirème</h3>
+          <p class="portfolio__desc">A cinematic fragrance concept — conceived, directed, and produced entirely by the house.</p>
+          <a href="/noireme.html" class="portfolio__link" aria-label="View Noirème case study">View Case Study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/the-first-step.html" aria-label="Project: The First Step">
+        <div class="portfolio__media">
+          <img class="portfolio__img" src="assets/concepts/mars-ad-the-first-step/images/magnifics_upscale-precision-bLlRBKTlqsKlKu2VkBqk-Cinematic_photorealistic_film_still_916_vertical_e_delpmaspu.jpeg" alt="The First Step — Mars ad concept by Realm of Steez" loading="lazy" />
+        </div>
+        <div class="portfolio__info">
+          <span class="portfolio__cat">House Concept</span>
+          <h3 class="portfolio__title">The First Step</h3>
+          <p class="portfolio__desc">A cinematic spec ad set on Mars — an athlete takes humanity's first step on alien soil. The universe watches.</p>
+          <a href="/the-first-step.html" class="portfolio__link" aria-label="View The First Step case study">View Case Study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  ABOUT                                              -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+
+    <div class="about__bg" aria-hidden="true"></div>
+
+    <div class="about__inner">
+      <div class="about__left">
+        <span class="section-label" aria-hidden="true">02</span>
+        <h2 class="section-title" id="about-heading">The House</h2>
+
+        <div class="about__text-block">
+          <p class="about__lead reveal-text">
+            Realm of Steez exists beyond the content studio. We are a short film production house — built for brands and visionaries who understand that the distance between content and cinema is the distance between noise and legacy.
+          </p>
+          <p class="about__body reveal-text">
+            Every project begins with one conviction: your brand deserves more than a video. We bring the full discipline of cinematic craft to every brief — precise visual language, deliberate composition, and sequences built to outlast the moment they were made for.
+          </p>
+          <p class="about__body reveal-text">
+            A collaboration with Realm of Steez means placing your vision in the hands of filmmakers who treat every story as worth telling beautifully. Not content. Not clips. Short films — authored with precision, care, and the uncompromising luxury your brand commands.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="about__right" aria-hidden="true">
+        <div class="about__img-wrap">
+          <div class="about__img-placeholder">
+            <img src="assets/ROS/about-mansion.jpg"
+                 alt="Realm of Steez — cinematic production house"
+                 class="about__img"
+                 loading="lazy" />
+          </div>
+          <div class="about__img-accent"></div>
+        </div>
+
+        <!-- Floating quote card -->
+        <blockquote class="about__quote">
+          <p>"Every frame is a world. Every world, a feeling."</p>
+          <cite>— Realm of Steez</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  SERVICES                                           -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+
+    <div class="section-header">
+      <span class="section-label" aria-hidden="true">03</span>
+      <h2 class="section-title" id="services-heading">Services</h2>
+      <p class="section-sub">Private Cinematic Studio</p>
+    </div>
+
+    <!-- Manifesto -->
+    <div class="services__manifesto reveal">
+      <p class="services__manifesto-lead">"Film is not content. It is perception, engineered."</p>
+      <p class="services__manifesto-body">Every frame must justify its existence. Every silence must carry tension. Every release must feel inevitable.</p>
+      <p class="services__manifesto-body">We do not follow culture. We construct presence within it.</p>
+      <p class="services__manifesto-body">Realm of Steez exists for brands and visionaries who understand that image is power — and power is designed.</p>
+      <p class="services__manifesto-note">Realm of Steez operates as a private studio. Projects are accepted selectively. All films are constructed in-house.</p>
+    </div>
+
+    <!-- Formats -->
+    <div class="services__formats reveal">
+      <h3 class="services__formats-heading">Formats</h3>
+      <div class="services__formats-grid">
+        <div class="services__format-item">
+          <span class="services__format-name">Micro</span>
+          <span class="services__format-duration">6–20 seconds</span>
+        </div>
+        <div class="services__format-item">
+          <span class="services__format-name">Short</span>
+          <span class="services__format-duration">30–90 seconds</span>
+        </div>
+        <div class="services__format-item">
+          <span class="services__format-name">Long</span>
+          <span class="services__format-duration">2–10+ minutes</span>
+        </div>
+        <div class="services__format-item">
+          <span class="services__format-name">Still</span>
+          <span class="services__format-duration">10–20 editorial frames</span>
+        </div>
+      </div>
+      <p class="services__formats-note">Duration follows narrative strength — not request.</p>
+    </div>
+
+    <!-- Production Access -->
+    <div class="services__access-header reveal">
+      <h3 class="services__access-title">Production Access</h3>
+      <p class="services__access-sub">Three levels. One standard: precision.</p>
+    </div>
+
+    <div class="services__grid">
+
+      <article class="services__card" aria-label="Level I — Core">
+        <div class="services__level">Level I — Core</div>
+        <h3 class="services__title">Visual Architecture</h3>
+        <ul class="services__list" aria-label="Core inclusions">
+          <li>Concept direction</li>
+          <li>Script development</li>
+          <li>Character creation</li>
+          <li>Environment &amp; set design</li>
+          <li>Wardrobe styling</li>
+          <li>Structured edit</li>
+        </ul>
+        <p class="services__delivered">Delivered as a clean visual master.</p>
+        <p class="services__exclusions">No soundtrack. No sound design. No colour grade. No upscale finish.</p>
+        <p class="services__tagline">Foundation only.</p>
+      </article>
+
+      <article class="services__card services__card--accent" aria-label="Level II — Enhanced">
+        <div class="services__level">Level II — Enhanced</div>
+        <h3 class="services__title">Cinematic Completion</h3>
+        <p class="services__includes">Includes Core, plus:</p>
+        <ul class="services__list" aria-label="Enhanced inclusions">
+          <li>Custom-composed soundtrack</li>
+          <li>Sound design integration</li>
+          <li>Optional voiceover</li>
+          <li>2K master finish</li>
+          <li>Image refinement</li>
+        </ul>
+        <p class="services__tagline">Refined. Immersive. Release-ready.</p>
+      </article>
+
+      <article class="services__card" aria-label="Level III — Signature">
+        <div class="services__level">Level III — Signature</div>
+        <h3 class="services__title">Definitive Release</h3>
+        <p class="services__includes">Includes Enhanced, plus:</p>
+        <ul class="services__list" aria-label="Signature inclusions">
+          <li>Cinematic colour grade</li>
+          <li>4K master finish</li>
+          <li>Advanced refinement passes</li>
+          <li>Precision audio mastering</li>
+          <li>Trailer edit</li>
+          <li>Promotional cutdowns</li>
+          <li>Multi-format export suite</li>
+          <li>Website-ready master</li>
+          <li>Promotional still frames</li>
+        </ul>
+        <p class="services__tagline">This is not an edit. It is a controlled release.</p>
+      </article>
+
+    </div><!-- /services__grid -->
+
+    <!-- Editorial Stills -->
+    <div class="services__access-header reveal" style="margin-top: 56px;">
+      <h3 class="services__access-title">Editorial Stills</h3>
+      <p class="services__access-sub">Brand imagery. Constructed, not captured.</p>
+    </div>
+
+    <div class="services__editorial reveal">
+      <article class="services__card services__card--accent" aria-label="Editorial Stills — Brand Imagery">
+        <div class="services__level">Brand Imagery</div>
+        <h3 class="services__title">Editorial Frames</h3>
+        <p class="services__includes">For brands that need image before — or alongside — film.</p>
+        <ul class="services__list" aria-label="Editorial stills inclusions">
+          <li>10–20 editorial-grade still frames</li>
+          <li>Creative direction &amp; single mood</li>
+          <li>Product, lifestyle &amp; campaign contexts</li>
+          <li>Lookbook &amp; press-ready formats</li>
+          <li>High-resolution export suite</li>
+        </ul>
+        <p class="services__tagline">Image as argument. Every frame authored.</p>
+      </article>
+    </div>
+
+    <!-- Closing -->
+    <div class="services__closing reveal">
+      <p class="services__closing-lead">We collaborate with those who value intention over volume.</p>
+      <p class="services__closing-body">If your brand requires presence — not noise — Realm of Steez is open for private consultation.</p>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  PHILOSOPHY BREAK                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="philosophy" aria-label="Creative philosophy">
+    <div class="philosophy__bg" aria-hidden="true"></div>
+    <div class="philosophy__content">
+      <p class="philosophy__text reveal-text">
+        "We do not simply produce films.<br />We author experiences — each one<br />a testament to the power of<br />refined, purposeful vision."
+      </p>
+      <div class="philosophy__line" aria-hidden="true"></div>
+      <span class="philosophy__attr">Realm of Steez — Est. 2020</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  CONTACT                                            -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+
+    <div class="contact__inner">
+
+      <div class="contact__left">
+        <span class="section-label" aria-hidden="true">04</span>
+        <h2 class="section-title" id="contact-heading">Submit a Brief</h2>
+        <p class="contact__sub">
+          We review every brief personally. We take on a small number of projects each year — only where the fit is genuine.
+        </p>
+        <p class="contact__sub contact__sub--note">
+          Not ready to submit a full brief? Reach us directly.
+        </p>
+        <div class="contact__avail">
+          <span class="contact__avail-dot" aria-hidden="true"></span>
+          Currently open for new collaborations
+        </div>
+        <div class="contact__details">
+          <div class="contact__detail">
+            <span class="contact__detail-label">Email</span>
+            <a href="mailto:studio@realmofsteez.com" class="contact__detail-value">studio@realmofsteez.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__right">
+        <form class="contact__form" id="contactForm" name="contact" netlify action="/thank-you" method="post" novalidate aria-label="Brief submission form">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="name">Your Name</label>
+              <input class="form__input" type="text" id="name" name="name" autocomplete="name" placeholder="Full name" required aria-required="true" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="brand">Brand / Company</label>
+              <input class="form__input" type="text" id="brand" name="brand" placeholder="Your brand name" required aria-required="true" />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">Email Address</label>
+            <input class="form__input" type="email" id="email" name="email" autocomplete="email" placeholder="your@email.com" required aria-required="true" />
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="project-type">Project Type</label>
+              <select class="form__input form__select" id="project-type" name="project-type" required aria-required="true">
+                <option value="" disabled selected>Select type</option>
+                <option value="short-film">Short Film</option>
+                <option value="brand-campaign">Brand Campaign</option>
+                <option value="commercial">Commercial</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="timeline">Timeline</label>
+              <select class="form__input form__select" id="timeline" name="timeline" required aria-required="true">
+                <option value="" disabled selected>Select timeline</option>
+                <option value="0-3mo">Within 3 months</option>
+                <option value="3-6mo">3 – 6 months</option>
+                <option value="6-12mo">6 – 12 months</option>
+                <option value="exploring">Exploring / Open</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="budget">Budget Range</label>
+            <select class="form__input form__select" id="budget" name="budget" required aria-required="true">
+              <option value="" disabled selected>Select range</option>
+              <option value="under-25k">Under $25,000</option>
+              <option value="25-75k">$25,000 – $75,000</option>
+              <option value="75-150k">$75,000 – $150,000</option>
+              <option value="150k-plus">$150,000+</option>
+              <option value="discuss">Prefer to discuss</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="vision">Your Brand & Vision</label>
+            <textarea class="form__input form__textarea" id="vision" name="vision" placeholder="Tell us about your brand and the story you want to tell..." required aria-required="true" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="form__submit" aria-label="Submit your brief">
+            <span>Submit Brief</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="form__success" id="formSuccess" role="status" aria-live="polite" hidden>Brief received. We will review and be in touch if there is a fit.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!--  FOOTER                                             -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">REALM OF STEEZ</span>
+        <p class="footer__tagline">Cinematic Short Film Production</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#portfolio" class="footer__link">Portfolio</a>
+        <a href="#about" class="footer__link">About</a>
+        <a href="#services" class="footer__link">Services</a>
+        <a href="#contact" class="footer__link">Contact</a>
+        <a href="/journal" class="footer__link">Journal</a>
+        <a href="/press" class="footer__link">Press</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; <span id="year"></span> Realm of Steez. All rights reserved.</p>
+      <p class="footer__legal">Crafted with precision.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay for portfolio -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio preview" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close preview">&times;</button>
+    <div class="lightbox__content" id="lightboxContent"></div>
+  </div>
+
+  <!-- Project Gallery Overlay -->
+  <div class="project-gallery" id="projectGallery" role="dialog" aria-modal="true" aria-label="Project gallery" hidden>
+    <div class="project-gallery__header">
+      <div class="project-gallery__meta">
+        <span class="project-gallery__cat" id="galleryCat"></span>
+        <h2 class="project-gallery__title" id="galleryTitle"></h2>
+        <p class="project-gallery__desc" id="galleryDesc"></p>
+      </div>
+      <button class="project-gallery__close" id="galleryClose" aria-label="Close project gallery">
+        <span>&times;</span>
+      </button>
+    </div>
+    <div class="project-gallery__grid" id="galleryGrid"></div>
+
+    <!-- Full-size image viewer within gallery -->
+    <div class="gallery-viewer" id="galleryViewer" hidden>
+      <button class="gallery-viewer__close" id="galleryViewerClose" aria-label="Close image">&times;</button>
+      <button class="gallery-viewer__prev" id="galleryPrev" aria-label="Previous image">&#8592;</button>
+      <button class="gallery-viewer__next" id="galleryNext" aria-label="Next image">&#8594;</button>
+      <img class="gallery-viewer__img" id="galleryViewerImg" src="" alt="" />
+      <video class="gallery-viewer__video" id="galleryViewerVideo" controls playsinline hidden></video>
+      <span class="gallery-viewer__count" id="galleryCount"></span>
+    </div>
+  </div>
+
+  <script src="main.js?v=22"></script>
+</body>
+</html>

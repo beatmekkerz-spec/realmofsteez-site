@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal — Realm of Steez</title>
+  <meta name="description" content="Thoughts on cinematic craft, brand storytelling, and the distance between content and legacy. By Realm of Steez." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Journal — Realm of Steez" />
+  <meta property="og:description" content="Thoughts on cinematic craft, brand storytelling, and the distance between content and legacy. By Realm of Steez." />
+  <meta property="og:url" content="https://realmofsteez.com/journal" />
+  <meta property="og:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Journal — Realm of Steez" />
+  <meta name="twitter:description" content="Thoughts on cinematic craft, brand storytelling, and the distance between content and legacy." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Realm of Steez Journal",
+    "description": "Thoughts on cinematic craft, brand storytelling, and the distance between content and legacy.",
+    "url": "https://realmofsteez.com/journal",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Realm of Steez",
+      "url": "https://realmofsteez.com"
+    }
+  }
+  </script>
+  <link rel="canonical" href="https://realmofsteez.com/journal" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #0f0f0f;
+      --gold:       #C9A84C;
+      --gold-dim:   #9e7e38;
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.65);
+      --white-xdim: rgba(245,240,232,0.3);
+      --border:     rgba(245,240,232,0.08);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--serif);
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 32px clamp(24px, 6vw, 80px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__back {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s;
+    }
+    .nav__back:hover { color: var(--white); }
+    .nav__back svg { width: 14px; height: 14px; }
+    .nav__brand {
+      font-size: 0.62rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Header ── */
+    .journal-header {
+      padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px) clamp(40px, 6vw, 64px);
+      border-bottom: 1px solid var(--border);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .journal-header__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 20px;
+    }
+    .journal-header__title {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.1;
+    }
+
+    /* ── Article list ── */
+    .article-list {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 clamp(24px, 6vw, 80px);
+    }
+
+    .article-list__item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 40px;
+      padding: clamp(40px, 6vw, 64px) 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-list__num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--white-xdim);
+      padding-top: 6px;
+    }
+
+    .article-list__content { display: flex; flex-direction: column; gap: 12px; }
+
+    .article-list__meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+    .article-list__meta-dot { width: 3px; height: 3px; background: var(--border); border-radius: 50%; }
+
+    .article-list__title {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--white);
+      transition: color 0.3s;
+    }
+    .article-list__item:hover .article-list__title { color: var(--gold); }
+
+    .article-list__excerpt {
+      font-size: clamp(0.85rem, 1.3vw, 1rem);
+      line-height: 1.8;
+      color: var(--white-dim);
+      max-width: 620px;
+    }
+
+    .article-list__read {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-top: 4px;
+      transition: color 0.3s;
+    }
+    .article-list__item:hover .article-list__read { color: var(--gold); }
+
+    /* ── Article page ── */
+    .article {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: clamp(64px, 10vw, 100px) clamp(24px, 6vw, 48px);
+    }
+    .article + .article { border-top: 1px solid var(--border); }
+
+    .article__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .article__title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .article__meta {
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--white-xdim);
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article__lead {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white-dim);
+      margin-bottom: 36px;
+    }
+
+    .article__body {
+      font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+      line-height: 2;
+      color: var(--white-dim);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .article__body p { }
+
+    .article__pull {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.5;
+      padding-left: 24px;
+      border-left: 1px solid var(--gold);
+      margin: 8px 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      padding: 28px clamp(24px, 6vw, 80px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+    }
+    .footer__copy { font-size: 0.6rem; letter-spacing: 0.1em; color: var(--white-xdim); }
+    .footer__back { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--white-xdim); text-decoration: none; transition: color 0.3s; }
+    .footer__back:hover { color: var(--gold); }
+
+    @media (max-width: 700px) {
+      .article-list__item { grid-template-columns: 1fr; gap: 16px; }
+      .article-list__num { font-size: 1.5rem; }
+      .footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="/" class="nav__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M19 12H5M5 12L12 19M5 12L12 5"/>
+      </svg>
+      Realm of Steez
+    </a>
+    <span class="nav__brand">Journal</span>
+  </nav>
+
+  <div class="journal-header">
+    <span class="journal-header__label">Thinking</span>
+    <h1 class="journal-header__title">On craft,<br />story, and<br />the long view.</h1>
+  </div>
+
+  <!-- Article 1 -->
+  <article class="article">
+    <span class="article__label">Essay · February 2026</span>
+    <h2 class="article__title">On the Distance Between Content and Legacy</h2>
+    <p class="article__meta">By Realm of Steez &nbsp;·&nbsp; 4 min read</p>
+
+    <p class="article__lead">
+      There is a difference between a brand that makes content and a brand that makes films. Budget matters — it determines what is possible. But budget alone does not determine what is made. The difference is intention.
+    </p>
+
+    <div class="article__body">
+      <p>
+        Most content exists to be consumed and forgotten. It fills a feed. It satisfies an algorithm. It earns its thirty seconds of attention and dissolves. This is not a criticism — it is a description of the category. Content is a volume game, and volume demands speed, and speed demands that you do not think too long about any one thing.
+      </p>
+      <p>
+        A film is different. A film asks something of the person watching it. It asks them to stay, to feel, to carry something away. It is made with the understanding that it will be watched more than once — not because it went viral, but because it earned the re-watch. And that level of craft — the thinking, the authorship, the refusal to settle — is exactly what the investment is for.
+      </p>
+      <blockquote class="article__pull">
+        "The brands that last are not the ones that spoke the loudest. They are the ones that said something worth remembering."
+      </blockquote>
+      <p>
+        Luxury brands have always understood this intuitively. The great fashion houses do not make advertisements. They commission films. They hire directors. They treat the moving image as a form of cultural authorship, not marketing expenditure. And so their films exist in the world as artefacts — things you return to, things you share not because you were incentivised to, but because they moved you.
+      </p>
+      <p>
+        The distance between content and legacy is this: content asks what the brand needs today. A film asks what the brand deserves to be remembered for.
+      </p>
+      <p>
+        We make films. Not because the format is prestigious, but because we believe that every brand — if it has a genuine reason to exist — has a story worth telling with that level of care. The question we ask at the start of every collaboration is simple: in ten years, what do you want people to remember feeling when they think of your brand?
+      </p>
+      <p>
+        The answer to that question is the film.
+      </p>
+    </div>
+  </article>
+
+  <!-- Article 2 -->
+  <article class="article">
+    <span class="article__label">Essay · February 2026</span>
+    <h2 class="article__title">Why Every Frame Is a Decision</h2>
+    <p class="article__meta">By Realm of Steez &nbsp;·&nbsp; 3 min read</p>
+
+    <p class="article__lead">
+      The most common mistake in brand filmmaking is treating the visual as decoration for the message. The frame as backdrop. The image as illustration. This is backwards.
+    </p>
+
+    <div class="article__body">
+      <p>
+        In a film that works, the visual IS the message. What you see is what you feel. The choice of light — warm or cold, soft or hard, raking or diffused — is a choice about how the viewer's body responds before their mind engages. The choice of what fills the frame — negative space or density, stillness or motion — is a choice about what the brand believes is worth looking at.
+      </p>
+      <p>
+        Every frame is a decision. And every decision is an argument about what matters.
+      </p>
+      <blockquote class="article__pull">
+        "A director who cannot tell you why a frame is composed the way it is has not yet made a decision. They have made a default."
+      </blockquote>
+      <p>
+        When we worked on the Complice AM Serum film, we made hundreds of decisions before a single scene was rendered. Where does the product sit in the frame — centred, dominant, or approached? What does the background say about the world this product inhabits? What does the human presence communicate — aspiration, intimacy, power?
+      </p>
+      <p>
+        The answer to each of these is not aesthetic preference. It is brand argument. And the accumulation of those decisions over twenty seconds — the ice throne opening, the intimate close-up, the final portrait in cathedral light — is what makes a film feel authored rather than assembled.
+      </p>
+      <p>
+        This is what we mean when we say every frame is a decision. Not that every frame is beautiful — though we aim for that. But that every frame knows why it is there, what it is doing, and what it is asking the viewer to feel.
+      </p>
+      <p>
+        That level of intention is not expensive. It is just rare.
+      </p>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <span class="footer__copy">&copy; 2026 Realm of Steez. All rights reserved.</span>
+    <a href="/" class="footer__back">← Back to site</a>
+  </footer>
+
+</body>
+</html>

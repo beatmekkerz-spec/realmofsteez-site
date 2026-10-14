@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Password · Complice · A Realm of Steez Case Study</title>
+  <meta name="description" content="How Realm of Steez made The Password, the hero film for Swiss skincare house Complice: a candlelit corridor, a whispered password and golden doors that open onto the products." />
+  <meta property="og:title" content="The Password · Complice · A Realm of Steez Case Study" />
+  <meta property="og:description" content="How Realm of Steez made The Password, the hero film for Swiss skincare house Complice: a candlelit corridor, a whispered password and golden doors that open onto the products." />
+  <meta property="og:image" content="https://realmofsteez.com/assets/complice-password/poster.jpg" />
+  <meta property="og:url" content="https://realmofsteez.com/complice-case-study" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Password · Complice · A Realm of Steez Case Study" />
+  <meta name="twitter:description" content="How Realm of Steez made The Password, the hero film for Swiss skincare house Complice: a candlelit corridor, a whispered password and golden doors that open onto the products." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/complice-password/poster.jpg" />
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "VideoObject", "name": "The Password · Complice · A Realm of Steez Case Study", "description": "How Realm of Steez made The Password, the hero film for Swiss skincare house Complice: a candlelit corridor, a whispered password and golden doors that open onto the products.", "thumbnailUrl": "https://realmofsteez.com/assets/complice-password/poster.jpg", "contentUrl": "https://realmofsteez.com/assets/complice-password/password-film.mp4", "uploadDate": "2026-10-12", "duration": "PT31S", "director": {"@type": "Organization", "name": "Realm of Steez", "url": "https://realmofsteez.com"}}
+  </script>
+  <link rel="canonical" href="https://realmofsteez.com/complice-case-study" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #0f0f0f;
+      --gold:       #C9A84C;
+      --gold-dim:   #9e7e38;
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.65);
+      --white-xdim: rgba(245,240,232,0.35);
+      --border:     rgba(245,240,232,0.08);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--serif);
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 48px;
+      background: linear-gradient(to bottom, rgba(8,8,8,0.9) 0%, transparent 100%);
+    }
+
+    .nav__back {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s;
+    }
+    .nav__back:hover { color: var(--white); }
+    .nav__back svg { width: 16px; height: 16px; }
+
+    .nav__brand {
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Hero ───────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100svh;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/Complice Collaboration/complice/still-hero.jpg');
+      background-size: cover;
+      background-position: center top;
+      transform: scale(1.04);
+      transition: transform 8s ease-out;
+    }
+    .hero__bg.loaded { transform: scale(1); }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(8,8,8,0.3) 0%,
+        rgba(8,8,8,0.15) 40%,
+        rgba(8,8,8,0.55) 80%,
+        rgba(8,8,8,0.92) 100%
+      );
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(3.8rem, 13vw, 10rem);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .hero__sub {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+      font-weight: 400;
+      color: var(--white-dim);
+      letter-spacing: 0.02em;
+    }
+
+    .hero__line {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin-top: 8px;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--white-xdim);
+      font-size: 0.55rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      animation: scrollPulse 2.4s ease-in-out infinite;
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--gold-dim), transparent);
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+      50%       { opacity: 0.9; transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── Section base ───────────────────────── */
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px);
+    }
+
+    .section-label {
+      display: block;
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    /* ── Overview ───────────────────────────── */
+    .overview {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: start;
+      border-top: 1px solid var(--border);
+    }
+
+    .overview__heading {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--white);
+      position: sticky;
+      top: 120px;
+    }
+
+    .overview__right { display: flex; flex-direction: column; gap: 32px; }
+
+    .overview__meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .overview__meta-item { display: flex; flex-direction: column; gap: 6px; }
+
+    .overview__meta-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .overview__meta-value {
+      font-size: 0.85rem;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    .overview__body {
+      font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+      line-height: 1.9;
+      color: var(--white-dim);
+    }
+
+    .overview__pull {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.5;
+      padding-left: 24px;
+      border-left: 1px solid var(--gold);
+    }
+
+    /* ── Film ───────────────────────────────── */
+    .film-section {
+      background: var(--charcoal);
+      padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px);
+    }
+
+    .film-section__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .film-section__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+    }
+
+    .film-section__title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 300;
+    }
+
+    .film-section__duration {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .film-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .film-player {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .film-player video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .film-player__play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: rgba(8,8,8,0.45);
+      transition: opacity 0.4s;
+    }
+
+    .film-player__play.hidden { opacity: 0; pointer-events: none; }
+
+    .film-player__play-icon {
+      width: 64px;
+      height: 64px;
+      border: 1px solid rgba(245,240,232,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .film-player:hover .film-player__play-icon {
+      border-color: var(--gold);
+      transform: scale(1.06);
+    }
+
+    .film-player__play-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--white);
+      margin-left: 3px;
+    }
+
+    .film-player__play-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+
+    /* ── Stills ─────────────────────────────── */
+    .stills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--border);
+    }
+
+    .stills__item {
+      aspect-ratio: 9 / 16;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+
+    .stills__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .stills__item:hover img { transform: scale(1.04); }
+
+    /* ── Craft notes ────────────────────────── */
+    .craft {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: start;
+      border-top: 1px solid var(--border);
+    }
+
+    .craft__heading {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.2;
+      position: sticky;
+      top: 120px;
+    }
+    .craft__heading em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .craft__right { display: flex; flex-direction: column; gap: 28px; }
+
+    .craft__body {
+      font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+      line-height: 1.95;
+      color: var(--white-dim);
+    }
+
+    .craft__decisions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 8px;
+    }
+
+    .craft__decision {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .craft__decision-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      padding-top: 3px;
+    }
+
+    .craft__decision-text {
+      font-size: 0.85rem;
+      line-height: 1.75;
+      color: var(--white-dim);
+    }
+
+    /* ── CTA ────────────────────────────────── */
+    .cta-section {
+      text-align: center;
+      padding: clamp(80px, 12vw, 160px) clamp(24px, 6vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .cta-section__heading {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    .cta-section__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.65rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 16px 36px;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+    }
+
+    .cta-section__link:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: var(--gold);
+      color: var(--white);
+    }
+
+    .cta-section__link svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s;
+    }
+    .cta-section__link:hover svg { transform: translateX(4px); }
+
+    /* ── Footer ─────────────────────────────── */
+    .footer {
+      padding: 32px clamp(24px, 6vw, 80px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer__copy {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: var(--white-xdim);
+    }
+
+    .footer__back {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-xdim);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer__back:hover { color: var(--gold); }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 900px) {
+      .nav { padding: 24px 28px; }
+      .overview { grid-template-columns: 1fr; gap: 40px; }
+      .overview__heading { position: static; }
+      .craft { grid-template-columns: 1fr; gap: 40px; }
+      .craft__heading { position: static; }
+      .stills { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .film-player { max-width: 100%; }
+      .film-section__header { flex-wrap: wrap; gap: 10px; }
+      .film-section__duration { width: 100%; }
+      .overview__meta { grid-template-columns: 1fr 1fr; }
+      .stills { grid-template-columns: 1fr; }
+      .stills__item { aspect-ratio: 4 / 5; }
+      .craft__decision { grid-template-columns: 1fr; gap: 6px; }
+      .footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  
+    .hero__bg { background-image: url('assets/complice-password/poster.jpg'); background-position: center; }
+    .film-player--wide { max-width: 1200px; aspect-ratio: 16 / 9; }
+    .frames { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border); }
+    .frames__item { aspect-ratio: 16 / 9; overflow: hidden; background: var(--charcoal); position: relative; }
+    .frames__item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .frames__item:hover img { transform: scale(1.04); }
+    .frames__cap { position: absolute; left: 16px; bottom: 12px; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); text-shadow: 0 1px 8px rgba(0,0,0,0.7); }
+    .deliver { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; border-top: 1px solid var(--border); padding-top: 40px; }
+    .deliver__num { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--gold); line-height: 1; }
+    .deliver__label { margin-top: 12px; font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white-dim); line-height: 1.7; }
+    @media (max-width: 900px) { .frames { grid-template-columns: 1fr 1fr; } .deliver { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .frames { grid-template-columns: 1fr; } .film-player--wide { aspect-ratio: 16 / 9; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M19 12H5M5 12L12 19M5 12L12 5"/></svg>
+      Realm of Steez
+    </a>
+    <span class="nav__brand">Complice</span>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__label">Case Study &middot; 2026</span>
+      <h1 class="hero__title">The Password</h1>
+      <p class="hero__sub">A film for Complice</p>
+      <div class="hero__line"></div>
+    </div>
+    <div class="hero__scroll"><div class="hero__scroll-line"></div>Scroll</div>
+  </section>
+
+  <div class="section overview">
+    <div>
+      <span class="section-label">The Brief</span>
+      <h2 class="overview__heading">A Swiss house.<br />A secret.<br />One word.</h2>
+    </div>
+    <div class="overview__right">
+      <div class="overview__meta">
+        <div class="overview__meta-item"><span class="overview__meta-label">Client</span><span class="overview__meta-value">Complice, Swiss skincare</span></div>
+        <div class="overview__meta-item"><span class="overview__meta-label">Format</span><span class="overview__meta-value">Hero film for the website and social</span></div>
+        <div class="overview__meta-item"><span class="overview__meta-label">Duration</span><span class="overview__meta-value">31 seconds, 13 shots</span></div>
+        <div class="overview__meta-item"><span class="overview__meta-label">Year</span><span class="overview__meta-value">2026</span></div>
+      </div>
+      <p class="overview__body">Complice makes four formulas in Switzerland and stands behind every one of them. The old website told you that. It just looked like every other skincare site doing the same. The brand needed to feel like old money, quiet confidence and something you are lucky to be let in on.</p>
+      <blockquote class="overview__pull">"Make people feel they were let in on a secret."</blockquote>
+      <p class="overview__body">So we gave the brand a house and a password. The film opens the homepage, and everything else on the site lives behind those doors.</p>
+    </div>
+  </div>
+
+  <div class="film-section">
+    <div class="film-section__inner">
+      <div class="film-section__header">
+        <span class="section-label" style="margin-bottom:0">The Film</span>
+        <h2 class="film-section__title">The Password</h2>
+        <span class="film-section__duration">0:31 &middot; Sound on</span>
+      </div>
+      <div class="film-wrap">
+        <div class="film-player film-player--wide" id="filmPlayer">
+          <video id="filmVideo" src="assets/complice-password/password-film.mp4" playsinline preload="metadata" poster="assets/complice-password/poster.jpg"></video>
+          <div class="film-player__play" id="playOverlay">
+            <div class="film-player__play-icon"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <span class="film-player__play-label">Play Film</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frames">
+    <div class="frames__item"><img src="assets/complice-password/frame-1.0.jpg" alt="The candlelit corridor of the lake house at dusk" loading="lazy" /><span class="frames__cap">The house</span></div>
+    <div class="frames__item"><img src="assets/complice-password/frame-12.5.jpg" alt="She whispers the password at the doorman's ear" loading="lazy" /><span class="frames__cap">The password</span></div>
+    <div class="frames__item"><img src="assets/complice-password/frame-15.0.jpg" alt="The doorman recognises her" loading="lazy" /><span class="frames__cap">Recognition</span></div>
+    <div class="frames__item"><img src="assets/complice-password/frame-17.0.jpg" alt="Her silhouette walks into the light" loading="lazy" /><span class="frames__cap">Into the light</span></div>
+    <div class="frames__item"><img src="assets/complice-password/frame-20.5.jpg" alt="She exhales in the gold light" loading="lazy" /><span class="frames__cap">Inside</span></div>
+    <div class="frames__item"><img src="assets/complice-password/frame-29.5.jpg" alt="The four Complice products on travertine with the line Fall in love with your skin" loading="lazy" /><span class="frames__cap">Fall in love with your skin</span></div>
+  </div>
+
+  <div class="section craft">
+    <div>
+      <span class="section-label">How It Was Made</span>
+      <h2 class="craft__heading">Every frame<br />designed <em>first.</em></h2>
+    </div>
+    <div class="craft__right">
+      <p class="craft__body">Nothing in the film was left to chance. Every character, room and prop was designed as a still before a single shot moved. Then the film was built one shot at a time, each shot doing one thing, so the story reads at a glance on a phone.</p>
+      <div class="craft__decisions">
+        <div class="craft__decision"><span class="craft__decision-label">The Story</span><p class="craft__decision-text">She tries the wrong door, is stopped by a white glove, and whispers a word we never hear. The silence is the hook. Everyone wants to know the password.</p></div>
+        <div class="craft__decision"><span class="craft__decision-label">The Continuity</span><p class="craft__decision-text">She always lives on the right of the frame, he always on the left. One rule, held across thirteen shots, so the eye never loses her.</p></div>
+        <div class="craft__decision"><span class="craft__decision-label">The Product</span><p class="craft__decision-text">The ending uses the real bottles, built in 3D from the real packaging and given a photographic finish. The true labels are laid back on at the end, so no letter on screen is ever invented.</p></div>
+        <div class="craft__decision"><span class="craft__decision-label">The Sound</span><p class="craft__decision-text">A score of harp, ticking clock and strings that goes silent when the glove stops her and turns from minor to major as the doors open. A voice with an English and French accent speaks for the house, and says nothing during the whisper.</p></div>
+        <div class="craft__decision"><span class="craft__decision-label">The Finish</span><p class="craft__decision-text">Every shot was graded into one late sun and upscaled to full HD on its own, so the film holds up on a desktop homepage as well as on a phone.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <span class="section-label">Delivered</span>
+    <div class="deliver">
+      <div><div class="deliver__num">1</div><div class="deliver__label">Hero film, with web,<br />social and master cuts</div></div>
+      <div><div class="deliver__num">8</div><div class="deliver__label">Website sections<br />rebuilt in one world</div></div>
+      <div><div class="deliver__num">4</div><div class="deliver__label">Products shown with<br />their true labels</div></div>
+      <div><div class="deliver__num">2</div><div class="deliver__label">Formats for every image,<br />desktop and mobile</div></div>
+    </div>
+    <p class="overview__body" style="margin-top:40px">The film is the front door. Behind it sits the full visual world of the new website. <a href="/complice-collaboration" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4)">See the collaboration</a>.</p>
+  </div>
+
+  <div class="cta-section">
+    <span class="cta-section__label">Realm of Steez</span>
+    <h2 class="cta-section__heading">Your brand deserves<br />its own film.</h2>
+    <a href="/#contact" class="cta-section__link">
+      Submit a Brief
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg>
+    </a>
+  </div>
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026 Realm of Steez. All rights reserved.</p>
+    <a href="/" class="footer__back">&larr; Back to site</a>
+  </footer>
+
+  <script>
+    const heroBg = document.getElementById('heroBg');
+    window.addEventListener('scroll', () => { heroBg.style.transform = `scale(1) translateY(${window.scrollY * 0.3}px)`; }, { passive: true });
+    window.addEventListener('load', () => heroBg.classList.add('loaded'));
+    const video = document.getElementById('filmVideo'), overlay = document.getElementById('playOverlay'), player = document.getElementById('filmPlayer');
+    player.addEventListener('click', () => { if (video.paused) { video.play(); overlay.classList.add('hidden'); } else { video.pause(); overlay.classList.remove('hidden'); } });
+    video.addEventListener('ended', () => overlay.classList.remove('hidden'));
+  </script>
+</body>
+</html>

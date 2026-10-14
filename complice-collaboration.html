@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Password · The Lake House · Complice · A Realm of Steez Collaboration</title>
+  <meta name="description" content="The visual world Realm of Steez built for Complice: one golden-hour day at a private Swiss lake house, from the AM serum at dawn to the PM serum at dusk." />
+  <meta property="og:title" content="The Lake House · Complice · A Realm of Steez Collaboration" />
+  <meta property="og:description" content="The visual world Realm of Steez built for Complice: one golden-hour day at a private Swiss lake house, from the AM serum at dawn to the PM serum at dusk." />
+  <meta property="og:image" content="https://realmofsteez.com/assets/complice-password/invest.jpg" />
+  <meta property="og:url" content="https://realmofsteez.com/complice-collaboration" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Lake House · Complice · A Realm of Steez Collaboration" />
+  <meta name="twitter:description" content="The visual world Realm of Steez built for Complice: one golden-hour day at a private Swiss lake house, from the AM serum at dawn to the PM serum at dusk." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/complice-password/invest.jpg" />
+  <link rel="canonical" href="https://realmofsteez.com/complice-collaboration" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Playfair+Display:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #0f0f0f;
+      --gold:       #C9A84C;
+      --gold-dim:   #9e7e38;
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.65);
+      --white-xdim: rgba(245,240,232,0.35);
+      --border:     rgba(245,240,232,0.08);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--serif);
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 48px;
+      background: linear-gradient(to bottom, rgba(8,8,8,0.9) 0%, transparent 100%);
+    }
+
+    .nav__back {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s;
+    }
+    .nav__back:hover { color: var(--white); }
+    .nav__back svg { width: 16px; height: 16px; }
+
+    .nav__brand {
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ── Hero ───────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100svh;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/Complice Collaboration/complice/still-hero.jpg');
+      background-size: cover;
+      background-position: center top;
+      transform: scale(1.04);
+      transition: transform 8s ease-out;
+    }
+    .hero__bg.loaded { transform: scale(1); }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(8,8,8,0.3) 0%,
+        rgba(8,8,8,0.15) 40%,
+        rgba(8,8,8,0.55) 80%,
+        rgba(8,8,8,0.92) 100%
+      );
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(3.8rem, 13vw, 10rem);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      color: var(--white);
+    }
+
+    .hero__sub {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+      font-weight: 400;
+      color: var(--white-dim);
+      letter-spacing: 0.02em;
+    }
+
+    .hero__line {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin-top: 8px;
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--white-xdim);
+      font-size: 0.55rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      animation: scrollPulse 2.4s ease-in-out infinite;
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--gold-dim), transparent);
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+      50%       { opacity: 0.9; transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── Section base ───────────────────────── */
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px);
+    }
+
+    .section-label {
+      display: block;
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    /* ── Overview ───────────────────────────── */
+    .overview {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: start;
+      border-top: 1px solid var(--border);
+    }
+
+    .overview__heading {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--white);
+      position: sticky;
+      top: 120px;
+    }
+
+    .overview__right { display: flex; flex-direction: column; gap: 32px; }
+
+    .overview__meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .overview__meta-item { display: flex; flex-direction: column; gap: 6px; }
+
+    .overview__meta-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .overview__meta-value {
+      font-size: 0.85rem;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    .overview__body {
+      font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+      line-height: 1.9;
+      color: var(--white-dim);
+    }
+
+    .overview__pull {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.5;
+      padding-left: 24px;
+      border-left: 1px solid var(--gold);
+    }
+
+    /* ── Film ───────────────────────────────── */
+    .film-section {
+      background: var(--charcoal);
+      padding: clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px);
+    }
+
+    .film-section__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .film-section__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      border-top: 1px solid var(--border);
+      padding-top: 32px;
+    }
+
+    .film-section__title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 300;
+    }
+
+    .film-section__duration {
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .film-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .film-player {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .film-player video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .film-player__play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: rgba(8,8,8,0.45);
+      transition: opacity 0.4s;
+    }
+
+    .film-player__play.hidden { opacity: 0; pointer-events: none; }
+
+    .film-player__play-icon {
+      width: 64px;
+      height: 64px;
+      border: 1px solid rgba(245,240,232,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .film-player:hover .film-player__play-icon {
+      border-color: var(--gold);
+      transform: scale(1.06);
+    }
+
+    .film-player__play-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--white);
+      margin-left: 3px;
+    }
+
+    .film-player__play-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+    }
+
+    /* ── Stills ─────────────────────────────── */
+    .stills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--border);
+    }
+
+    .stills__item {
+      aspect-ratio: 9 / 16;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+
+    .stills__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .stills__item:hover img { transform: scale(1.04); }
+
+    /* ── Craft notes ────────────────────────── */
+    .craft {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(40px, 8vw, 100px);
+      align-items: start;
+      border-top: 1px solid var(--border);
+    }
+
+    .craft__heading {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.2;
+      position: sticky;
+      top: 120px;
+    }
+    .craft__heading em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .craft__right { display: flex; flex-direction: column; gap: 28px; }
+
+    .craft__body {
+      font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+      line-height: 1.95;
+      color: var(--white-dim);
+    }
+
+    .craft__decisions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 8px;
+    }
+
+    .craft__decision {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .craft__decision-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      padding-top: 3px;
+    }
+
+    .craft__decision-text {
+      font-size: 0.85rem;
+      line-height: 1.75;
+      color: var(--white-dim);
+    }
+
+    /* ── CTA ────────────────────────────────── */
+    .cta-section {
+      text-align: center;
+      padding: clamp(80px, 12vw, 160px) clamp(24px, 6vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .cta-section__heading {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    .cta-section__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.65rem;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 16px 36px;
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+    }
+
+    .cta-section__link:hover {
+      background: rgba(201,168,76,0.08);
+      border-color: var(--gold);
+      color: var(--white);
+    }
+
+    .cta-section__link svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s;
+    }
+    .cta-section__link:hover svg { transform: translateX(4px); }
+
+    /* ── Footer ─────────────────────────────── */
+    .footer {
+      padding: 32px clamp(24px, 6vw, 80px);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer__copy {
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: var(--white-xdim);
+    }
+
+    .footer__back {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-xdim);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer__back:hover { color: var(--gold); }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 900px) {
+      .nav { padding: 24px 28px; }
+      .overview { grid-template-columns: 1fr; gap: 40px; }
+      .overview__heading { position: static; }
+      .craft { grid-template-columns: 1fr; gap: 40px; }
+      .craft__heading { position: static; }
+      .stills { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .film-player { max-width: 100%; }
+      .film-section__header { flex-wrap: wrap; gap: 10px; }
+      .film-section__duration { width: 100%; }
+      .overview__meta { grid-template-columns: 1fr 1fr; }
+      .stills { grid-template-columns: 1fr; }
+      .stills__item { aspect-ratio: 4 / 5; }
+      .craft__decision { grid-template-columns: 1fr; gap: 6px; }
+      .footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  
+    .hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .lede { max-width: 860px; margin: 0 auto; text-align: center; }
+    .lede__heading { font-family: var(--serif); font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 300; line-height: 1.25; }
+    .lede__heading em { font-style: italic; color: var(--gold); }
+    .lede__body { margin-top: 28px; font-size: clamp(0.95rem, 1.5vw, 1.15rem); line-height: 1.9; color: var(--white-dim); }
+    .day { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); }
+    .day figure { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--charcoal); }
+    .day img, .gallery img, .wide img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+    figure:hover img { transform: scale(1.03); }
+    figcaption { position: absolute; left: 20px; bottom: 16px; right: 20px; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); text-shadow: 0 1px 10px rgba(0,0,0,0.75); }
+    .palette { display: grid; grid-template-columns: repeat(9, 1fr); gap: 10px; margin-top: 40px; }
+    .swatch { display: flex; flex-direction: column; gap: 10px; }
+    .swatch__chip { aspect-ratio: 1 / 1.4; border: 1px solid var(--border); }
+    .swatch__name { font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--white-dim); line-height: 1.5; }
+    .swatch__hex { font-size: 0.62rem; letter-spacing: 0.12em; color: var(--gold-dim); }
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); }
+    .gallery figure { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--charcoal); }
+    .tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; background: var(--border); }
+    .tiles figure { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: var(--charcoal); }
+    .tiles img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .wide { position: relative; aspect-ratio: 21 / 9; overflow: hidden; }
+    .block-head { max-width: 1200px; margin: 0 auto; padding: clamp(64px, 9vw, 110px) clamp(24px, 6vw, 80px) 36px; display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 6vw, 80px); border-top: 1px solid var(--border); }
+    .block-head h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 300; line-height: 1.2; }
+    .block-head h2 em { font-style: italic; color: var(--gold); }
+    .block-head p { font-size: clamp(0.9rem, 1.4vw, 1.05rem); line-height: 1.9; color: var(--white-dim); }
+    @media (max-width: 900px) { .palette { grid-template-columns: repeat(3, 1fr); } .tiles { grid-template-columns: repeat(3, 1fr); } .block-head { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) { .day, .gallery { grid-template-columns: 1fr; } .tiles { grid-template-columns: 1fr 1fr; } .wide { aspect-ratio: 4 / 3; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M19 12H5M5 12L12 19M5 12L12 5"/></svg>
+      Realm of Steez
+    </a>
+    <span class="nav__brand">Complice</span>
+  </nav>
+
+  <section class="hero">
+    <video class="hero__video" src="assets/complice-password/password-loop.mp4" poster="assets/complice-password/poster.jpg" autoplay muted loop playsinline></video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__label">Collaboration &middot; 2026</span>
+      <h1 class="hero__title">The Password</h1>
+      <p class="hero__sub">The Lake House, a world for Complice</p>
+      <div class="hero__line"></div>
+    </div>
+    <div class="hero__scroll"><div class="hero__scroll-line"></div>Scroll</div>
+  </section>
+
+  <div class="section lede">
+    <span class="section-label">The Idea</span>
+    <h2 class="lede__heading">The whole website is<br /><em>one day at the lake.</em></h2>
+    <p class="lede__body">A private house on a Swiss lake, and a visitor who has been let in on its secret. Scrolling moves the day. Every page opens in the first light of morning and closes at dusk in the footer. Warm stone, still water and real sun, with no pure white and no pure black anywhere.</p>
+  </div>
+
+  <div class="day">
+    <figure><img src="assets/complice-password/sunrise.jpg" alt="Complice AM serum at dawn" loading="lazy" /><figcaption>AM &middot; The first light</figcaption></figure>
+    <figure><img src="assets/complice-password/sunset.jpg" alt="Complice PM serum at dusk" loading="lazy" /><figcaption>PM &middot; The last light</figcaption></figure>
+  </div>
+
+  <div class="section">
+    <span class="section-label">The Palette</span>
+    <h2 class="lede__heading" style="text-align:left">Taken from the stone of the house.</h2>
+    <div class="palette"><div class="swatch"><div class="swatch__chip" style="background:#E8C3A3"></div><span class="swatch__name">Dawn Peach</span><span class="swatch__hex">#E8C3A3</span></div><div class="swatch"><div class="swatch__chip" style="background:#DDD1C0"></div><span class="swatch__name">Travertine</span><span class="swatch__hex">#DDD1C0</span></div><div class="swatch"><div class="swatch__chip" style="background:#C9BAA5"></div><span class="swatch__name">Honed Stone</span><span class="swatch__hex">#C9BAA5</span></div><div class="swatch"><div class="swatch__chip" style="background:#A38B76"></div><span class="swatch__name">Sandstone Shadow</span><span class="swatch__hex">#A38B76</span></div><div class="swatch"><div class="swatch__chip" style="background:#B89350"></div><span class="swatch__name">Champagne Gold</span><span class="swatch__hex">#B89350</span></div><div class="swatch"><div class="swatch__chip" style="background:#8A4B12"></div><span class="swatch__name">Amber</span><span class="swatch__hex">#8A4B12</span></div><div class="swatch"><div class="swatch__chip" style="background:#2A231C"></div><span class="swatch__name">Espresso</span><span class="swatch__hex">#2A231C</span></div><div class="swatch"><div class="swatch__chip" style="background:#6F8799"></div><span class="swatch__name">Lake Blue</span><span class="swatch__hex">#6F8799</span></div><div class="swatch"><div class="swatch__chip" style="background:#9DB8A2"></div><span class="swatch__name">Cleanser Mint</span><span class="swatch__hex">#9DB8A2</span></div></div>
+  </div>
+
+  <div class="block-head">
+    <h2>Each product<br />in its <em>element.</em></h2>
+    <p>The shop gives every formula its own place in nature, matched to when and how it is used. Every bottle is the real one, with its true label.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="assets/complice-password/shop-am.jpg" alt="AM serum in snow at sunrise" loading="lazy" /><figcaption>AM Serum &middot; Snow at sunrise</figcaption></figure>
+    <figure><img src="assets/complice-password/shop-pm.jpg" alt="PM serum on wet stones at night" loading="lazy" /><figcaption>PM Serum &middot; Wet stones at night</figcaption></figure>
+    <figure><img src="assets/complice-password/shop-24h.jpg" alt="24H moisturizer in coral and sea salt" loading="lazy" /><figcaption>24H Moisturizer &middot; Coral and sea salt</figcaption></figure>
+    <figure><img src="assets/complice-password/shop-cleanser.jpg" alt="Cleanser in a morning stream" loading="lazy" /><figcaption>Cleanser &middot; Morning stream</figcaption></figure>
+  </div>
+
+  <div class="block-head">
+    <h2>The ingredients,<br />worn like <em>couture.</em></h2>
+    <p>Each product page carries one art image built from a real ingredient on its label. Barley frozen in lake ice. Chicory sinking into the deep sea. Coralline seaweed in a tide pool. Balloon vine in the first rain.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="assets/complice-password/art-am.jpg" alt="AM serum, Thaw" loading="lazy" /><figcaption>AM &middot; Thaw</figcaption></figure>
+    <figure><img src="assets/complice-password/art-pm.jpg" alt="PM serum, 1000 metres down" loading="lazy" /><figcaption>PM &middot; 1000 metres down</figcaption></figure>
+    <figure><img src="assets/complice-password/art-24h.jpg" alt="24H moisturizer, tide pool" loading="lazy" /><figcaption>24H &middot; Tide pool</figcaption></figure>
+    <figure><img src="assets/complice-password/art-cleanser.jpg" alt="Cleanser, first rain" loading="lazy" /><figcaption>Cleanser &middot; First rain</figcaption></figure>
+  </div>
+
+  <div class="block-head">
+    <h2>Five <em>promises.</em></h2>
+    <p>The brand's five pillars, each given a single specimen of a real ingredient. One quiet thought per tile.</p>
+  </div>
+  <div class="tiles"><figure><img src="assets/complice-password/promise-1.jpg" alt="Extracted from nature" loading="lazy" /><figcaption>Extracted from nature</figcaption></figure><figure><img src="assets/complice-password/promise-2.jpg" alt="Forty-five years" loading="lazy" /><figcaption>Forty-five years</figcaption></figure><figure><img src="assets/complice-password/promise-3.jpg" alt="Swiss scientists" loading="lazy" /><figcaption>Swiss scientists</figcaption></figure><figure><img src="assets/complice-password/promise-4.jpg" alt="The essence" loading="lazy" /><figcaption>The essence</figcaption></figure><figure><img src="assets/complice-password/promise-5.jpg" alt="Perfection" loading="lazy" /><figcaption>Perfection</figcaption></figure></div>
+
+  <div class="block-head">
+    <h2>The house,<br />for <em>investors.</em></h2>
+    <p>The same world carries the investor pages. The full range at the water's edge at dawn, built in one light so the glass and gold reflect the real lake.</p>
+  </div>
+  <figure class="wide"><img src="assets/complice-password/invest.jpg" alt="The Complice range on travertine at a Swiss lake at dawn" loading="lazy" /><figcaption>Invest &middot; The lineup at the lake</figcaption></figure>
+
+  <div class="block-head">
+    <h2>Born on <em>the water.</em></h2>
+    <p>Our Story and Sustainability stay on the lake. A glacier at dawn above the waterline and clean stones below it. A single chicory flower floating on clear Swiss water, with nothing to hide.</p>
+  </div>
+  <div class="gallery">
+    <figure><img src="assets/complice-password/story.jpg" alt="Alpine glacier above, glacial stones below the water" loading="lazy" /><figcaption>Our Story &middot; Born on the water</figcaption></figure>
+    <figure><img src="assets/complice-password/sustain.jpg" alt="A chicory flower floating on clear lake water" loading="lazy" /><figcaption>Sustainability &middot; Nothing to hide</figcaption></figure>
+  </div>
+
+  <div class="section lede">
+    <span class="section-label">The Front Door</span>
+    <h2 class="lede__heading">It all begins with <em>a password.</em></h2>
+    <p class="lede__body">The homepage opens on a short film that lets the visitor into the house. <a href="/complice-case-study" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.4)">Read the case study</a>.</p>
+  </div>
+
+  <div class="cta-section">
+    <span class="cta-section__label">Realm of Steez</span>
+    <h2 class="cta-section__heading">Your brand deserves<br />its own film.</h2>
+    <a href="/#contact" class="cta-section__link">
+      Submit a Brief
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M5 12H19M19 12L12 5M19 12L12 19"/></svg>
+    </a>
+  </div>
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026 Realm of Steez. All rights reserved.</p>
+    <a href="/" class="footer__back">&larr; Back to site</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VERRIER — House Concept | Realm of Steez</title>
+  <meta name="description" content="VERRIER — a House of Realm of Steez concept. A father on a night train out of Locarno, his daughter on the moon, and two moonphase watches that keep the same minute. Time, kept for two." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VERRIER — Realm of Steez Concept" />
+  <meta property="og:description" content="Time, kept for two." />
+  <meta property="og:url" content="https://realmofsteez.com/verrier" />
+  <meta property="og:image" content="https://realmofsteez.com/assets/concepts/verrier/images/vr-hero.jpg" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VERRIER — Realm of Steez Concept" />
+  <meta name="twitter:description" content="Time, kept for two." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/concepts/verrier/images/vr-hero.jpg" />
+  <link rel="canonical" href="https://realmofsteez.com/verrier" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #111;
+      --dark:       #161616;
+      --mid:        #1e1e1e;
+      --gold:       #C9A84C;
+      --gold-light: #D4B96A;
+      --gold-dim:   rgba(201,168,76,0.45);
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.55);
+      --white-xdim: rgba(245,240,232,0.2);
+      --night: #0B0F17;
+      --border:     rgba(201,168,76,0.18);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'Montserrat', Helvetica, Arial, sans-serif;
+      --ease-luxury: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--gold); color: var(--black); }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
+
+    img, video { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px clamp(24px, 5vw, 80px);
+      background: rgba(8,8,8,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__logo { font-family: var(--sans); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.35em; color: var(--gold); }
+    .nav__back { font-family: var(--sans); font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; color: var(--white-dim); transition: color 0.3s; }
+    .nav__back:hover { color: var(--gold); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .hero__video-wrap {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero__video {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: 0.4;
+    }
+    .hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.3) 40%, rgba(8,8,8,0.8) 100%);
+    }
+    .hero__content {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 900px;
+    }
+    .hero__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+    .hero__subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    /* ── Sections ── */
+    .section {
+      padding: clamp(80px, 10vw, 160px) clamp(24px, 5vw, 80px);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section--wide {
+      max-width: 1400px;
+    }
+    .section__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 40px;
+      color: var(--white);
+    }
+    .section__text {
+      font-family: var(--serif);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--white-dim);
+      max-width: 750px;
+    }
+    .section__text + .section__text { margin-top: 24px; }
+    .section__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold-dim);
+      margin: 60px 0;
+    }
+
+    /* ── Video Player ── */
+    .video-showcase {
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--charcoal);
+    }
+    .video-wrap video {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Narration Panels ── */
+    .narration {
+      position: relative;
+      width: 100%;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .narration__img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .narration__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .narration__overlay--dark {
+      background: linear-gradient(180deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.35) 40%, rgba(8,8,8,0.65) 100%);
+    }
+    .narration__overlay--heavy {
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.5) 40%, rgba(8,8,8,0.75) 100%);
+    }
+    .narration__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px clamp(24px, 8vw, 120px);
+      max-width: 800px;
+    }
+    .narration__text {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.92;
+    }
+    .narration__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .narration--short { min-height: 50vh; }
+    .narration--tall { min-height: 100vh; }
+
+    /* ── Narration Pair (side-by-side image + text) ── */
+    .narration-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+    .narration-pair__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .narration-pair__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(40px, 6vw, 100px);
+      background: var(--charcoal);
+    }
+    .narration-pair__text {
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.9;
+    }
+    .narration-pair__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    @media (max-width: 768px) {
+      .narration-pair { grid-template-columns: 1fr; }
+      .narration-pair__img { height: 50vh; }
+    }
+
+    /* ── Stats Grid ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .stat__value {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat__label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--white-dim);
+      text-transform: uppercase;
+    }
+
+    /* ── Image Grid ── */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 40px;
+    }
+    .image-grid img {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 768px) {
+      .image-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Three Worlds ── */
+    .worlds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .world__title {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .world__subtitle {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .world__text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--white-dim);
+    }
+
+    /* ── Colour Palette ── */
+    .palette {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .swatch__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--white-dim);
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    /* ── Tagline ── */
+    .tagline-section {
+      text-align: center;
+      padding: clamp(120px, 15vw, 240px) clamp(24px, 5vw, 80px);
+    }
+    .tagline {
+      font-family: var(--sans);
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .tagline span { color: var(--gold); }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 60px clamp(24px, 5vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+    .footer__text {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--white-xdim);
+    }
+    .footer__link { color: var(--gold-dim); transition: color 0.3s; }
+    .footer__link:hover { color: var(--gold); }
+
+    /* ── Animations ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .specs { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:48px; margin-top:48px; }
+    .hero__title { letter-spacing:0.06em; }
+    .image-grid img { aspect-ratio:4/5; }
+    .narration-pair__img { min-height:70vh; }
+</style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="/" class="nav__logo">REALM OF STEEZ</a>
+    <a href="/" class="nav__back">&larr; BACK TO HOME</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__video-wrap">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/concepts/verrier/images/vr-hero.jpg">
+        <source src="assets/concepts/verrier/videos/verrier-loop.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">House Concept &middot; Locarno, Switzerland</p>
+      <h1 class="hero__title">VERRIER</h1>
+      <p class="hero__subtitle">Two watches. One minute.<br>Time, kept for two.</p>
+    </div>
+  </section>
+
+  <div class="video-showcase fade-in" style="margin-top: -60px; position: relative; z-index: 3;">
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="assets/concepts/verrier/images/vr-split.jpg">
+        <source src="assets/concepts/verrier/videos/verrier-film.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <section class="section fade-in">
+    <p class="section__label">The Idea</p>
+    <h2 class="section__title">A moonphase made<br>for two.</h2>
+    <p class="section__text">
+      VERRIER is an invented Swiss watch house, and this is its first pair: two moonphase watches, one with the moon in its window and one with the Earth. A father wears his on a night train out of Locarno. His daughter wears hers on the moon.
+    </p>
+    <p class="section__text">
+      The film never names a complication. It stops time between them, then lets a single minute travel three hundred and eighty thousand kilometres, from his crown to her wrist.
+    </p>
+    <div class="stats">
+      <div><p class="stat__value">53s</p><p class="stat__label">Launch Film</p></div>
+      <div><p class="stat__value">2</p><p class="stat__label">Watches</p></div>
+      <div><p class="stat__value">384,400 km</p><p class="stat__label">Between Them</p></div>
+      <div><p class="stat__value">16:9 &middot; 9:16</p><p class="stat__label">Every Format</p></div>
+    </div>
+  </section>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/verrier/images/vr-train.jpg" alt="A night train crossing the snowy Centovalli" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">The night train out of Locarno.<br><br>She promised she'd be home <em>by the full moon.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/verrier/images/vr-window.jpg" alt="The father at the train window, an empty sky over the mountains" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">But over Lago Maggiore,<br>the moon <em>never came.</em></p></div>
+  </div>
+
+  <section class="narration narration fade-in">
+    <img class="narration__img" src="assets/concepts/verrier/images/vr-frozen.jpg" alt="An astronaut's boots frozen mid-stride on the moon" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content"><p class="narration__text">Up there, everything has stopped.<br>Mid-stride. <em>Mid-breath.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/verrier/images/vr-dial.jpg" alt="The VERRIER dial with the moon in its window" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;"><p class="narration-pair__text">His dial still shows the moon.<br><br>So he turns the crown,<br><em>one click at a time.</em></p></div>
+  </div>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/verrier/images/vr-explode.jpg" alt="The VERRIER watch opening into its parts" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">Some things are made to come apart,<br><em>and find their way back.</em></p></div>
+  </section>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/verrier/images/vr-walk.jpg" alt="The astronaut walking again under a hard sun" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text"><em>Un minuto alla volta.</em><br><br>One minute at a time, the moon moves again.</p></div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/verrier/images/vr-fullmoon.jpg" alt="A full moon rising in the train window" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">He looks up.</p></div>
+  </div>
+
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/verrier/images/vr-her.jpg" alt="His daughter on the moon, smiling inside her helmet" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;"><p class="narration-pair__text">And she <em>looks down.</em></p></div>
+  </div>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/verrier/images/vr-split.jpg" alt="His moon dial and her Earth dial side by side at ten past ten" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content"><p class="narration__text">Same moon.<br><em>Same minute.</em></p></div>
+  </section>
+
+  <section class="section fade-in">
+    <p class="section__label">The Pair</p>
+    <h2 class="section__title">Each dial holds<br>the other's sky.</h2>
+    <div class="specs">
+      <div><p class="world__subtitle">01</p><h3 class="world__title">His: The Moon</h3><p class="world__text">The moonphase he waits for from the train window. When it stops, the night stops with it.</p></div>
+      <div><p class="world__subtitle">02</p><h3 class="world__title">Hers: The Earth</h3><p class="world__text">In her window, a small blue Earth: the home she looks down on from a quarter of a million miles away.</p></div>
+      <div><p class="world__subtitle">03</p><h3 class="world__title">Ten Past Ten</h3><p class="world__text">The minute they agreed to meet. Both dials arrive at it together, and hold it.</p></div>
+      <div><p class="world__subtitle">04</p><h3 class="world__title">Midnight and Gold</h3><p class="world__text">A midnight-blue sunburst dial, gold dauphine hands and baton markers, a polished steel case on black alligator.</p></div>
+    </div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/verrier/images/vr-earthrise.jpg" alt="Earthrise over the lunar horizon, a lone astronaut and her footprints" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">Home was never a place.<br><br><em>It's a time we keep.</em></p></div>
+  </div>
+
+  <section class="section section--wide fade-in">
+    <p class="section__label">Selected Frames</p>
+    <h2 class="section__title">From the concept.</h2>
+    <div class="image-grid">
+      <img src="assets/concepts/verrier/images/vr-face.jpg" alt="The father in the train compartment, lamplight" loading="lazy" />
+      <img src="assets/concepts/verrier/images/vr-herface.jpg" alt="The daughter on the moon" loading="lazy" />
+      <img src="assets/concepts/verrier/images/vr-caress.jpg" alt="His thumb on the bezel of the moon dial" loading="lazy" />
+      <img src="assets/concepts/verrier/images/vr-wrist.jpg" alt="Her gloved wrist and the VERRIER watch" loading="lazy" />
+      <img src="assets/concepts/verrier/images/vr-parts.jpg" alt="The watch reassembling" loading="lazy" />
+      <img src="assets/concepts/verrier/images/vr-train-moon.jpg" alt="The night train under the full moon" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="section fade-in">
+    <p class="section__label">Colour Strategy</p>
+    <h2 class="section__title">Two worlds, one warm metal.</h2>
+    <p class="section__text">
+      His world is lamplight and timber on a winter night; hers is hard sun on grey dust and black sky. The only thing the two share is the watch: midnight blue and gold, the same in both. When the screen splits, it is the one thing that matches.
+    </p>
+    <div class="palette">
+      <div><div class="swatch" style="background:#0E1726;"></div><p class="swatch__label">Midnight Dial</p></div>
+      <div><div class="swatch" style="background:#9B9A95;"></div><p class="swatch__label">Moon Dust</p></div>
+      <div><div class="swatch" style="background:#E4E7EC;"></div><p class="swatch__label">Alpine Snow</p></div>
+      <div><div class="swatch" style="background:#B8793A;"></div><p class="swatch__label">Lamplight</p></div>
+      <div><div class="swatch" style="background:#C9A84C;"></div><p class="swatch__label">Dial Gold</p></div>
+    </div>
+  </section>
+
+  <section class="tagline-section fade-in">
+    <p class="tagline">Time, kept <span>for two.</span></p>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">
+      &copy; 2026 <a href="/" class="footer__link">REALM OF STEEZ</a> &mdash; House Concept. Brand, product and characters invented.
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brief Received — Realm of Steez</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --gold:       #C9A84C;
+      --gold-dim:   #9e7e38;
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.6);
+      --white-xdim: rgba(245,240,232,0.28);
+      --border:     rgba(245,240,232,0.08);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--serif);
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: clamp(40px, 8vw, 80px) clamp(24px, 6vw, 80px);
+      text-align: center;
+    }
+
+    .ty__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) 0.2s both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .ty__line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--gold));
+      margin-bottom: 40px;
+    }
+
+    .ty__label {
+      font-size: 0.58rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .ty__heading {
+      font-family: var(--serif);
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .ty__body {
+      font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+      line-height: 1.9;
+      color: var(--white-dim);
+      max-width: 480px;
+      margin-bottom: 48px;
+    }
+
+    .ty__divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin-bottom: 48px;
+    }
+
+    .ty__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.62rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 14px 32px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+    .ty__back:hover {
+      color: var(--white);
+      border-color: rgba(245,240,232,0.25);
+    }
+    .ty__back svg { width: 14px; height: 14px; transition: transform 0.3s; }
+    .ty__back:hover svg { transform: translateX(-3px); }
+
+    .ty__footer {
+      position: fixed;
+      bottom: 28px;
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--white-xdim);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ty__wrap">
+    <div class="ty__line"></div>
+    <span class="ty__label">Realm of Steez</span>
+    <h1 class="ty__heading">Brief received.</h1>
+    <p class="ty__body">
+      We review every submission personally. If there is a genuine fit — in vision, ambition, and timing — we will be in touch.
+    </p>
+    <div class="ty__divider"></div>
+    <a href="/" class="ty__back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M19 12H5M5 12L12 19M5 12L12 5"/>
+      </svg>
+      Back to site
+    </a>
+  </div>
+
+  <span class="ty__footer">studio@realmofsteez.com</span>
+
+</body>
+</html>

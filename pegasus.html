@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEGASUS — House Concept | Realm of Steez</title>
+  <meta name="description" content="PEGASUS — a House of Realm of Steez concept. A black stallion in a storm-struck barn, a car hidden under a cover beside it, and the night the storm finally found them both. Born of the storm." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PEGASUS — Realm of Steez Concept" />
+  <meta property="og:description" content="Born of the storm." />
+  <meta property="og:url" content="https://realmofsteez.com/pegasus" />
+  <meta property="og:image" content="https://realmofsteez.com/assets/concepts/pegasus/images/pg-bolt.jpg" />
+  <meta property="og:site_name" content="Realm of Steez" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PEGASUS — Realm of Steez Concept" />
+  <meta name="twitter:description" content="Born of the storm." />
+  <meta name="twitter:image" content="https://realmofsteez.com/assets/concepts/pegasus/images/pg-bolt.jpg" />
+  <link rel="canonical" href="https://realmofsteez.com/pegasus" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:      #080808;
+      --charcoal:   #111;
+      --dark:       #161616;
+      --mid:        #1e1e1e;
+      --gold:       #C9A84C;
+      --gold-light: #D4B96A;
+      --gold-dim:   rgba(201,168,76,0.45);
+      --white:      #F5F0E8;
+      --white-dim:  rgba(245,240,232,0.55);
+      --white-xdim: rgba(245,240,232,0.2);
+      --night: #120E1C;
+      --border:     rgba(201,168,76,0.18);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'Montserrat', Helvetica, Arial, sans-serif;
+      --ease-luxury: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--gold); color: var(--black); }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
+
+    img, video { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px clamp(24px, 5vw, 80px);
+      background: rgba(8,8,8,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__logo { font-family: var(--sans); font-size: 0.7rem; font-weight: 400; letter-spacing: 0.35em; color: var(--gold); }
+    .nav__back { font-family: var(--sans); font-size: 0.65rem; font-weight: 300; letter-spacing: 0.2em; color: var(--white-dim); transition: color 0.3s; }
+    .nav__back:hover { color: var(--gold); }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .hero__video-wrap {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero__video {
+      width: 100%; height: 100%; object-fit: cover;
+      opacity: 0.4;
+    }
+    .hero__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.3) 40%, rgba(8,8,8,0.8) 100%);
+    }
+    .hero__content {
+      position: relative; z-index: 2;
+      text-align: center;
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 900px;
+    }
+    .hero__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+    .hero__subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--white-dim);
+      line-height: 1.6;
+    }
+
+    /* ── Sections ── */
+    .section {
+      padding: clamp(80px, 10vw, 160px) clamp(24px, 5vw, 80px);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section--wide {
+      max-width: 1400px;
+    }
+    .section__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 40px;
+      color: var(--white);
+    }
+    .section__text {
+      font-family: var(--serif);
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--white-dim);
+      max-width: 750px;
+    }
+    .section__text + .section__text { margin-top: 24px; }
+    .section__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold-dim);
+      margin: 60px 0;
+    }
+
+    /* ── Video Player ── */
+    .video-showcase {
+      padding: 0 clamp(24px, 5vw, 80px);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--charcoal);
+    }
+    .video-wrap video {
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Narration Panels ── */
+    .narration {
+      position: relative;
+      width: 100%;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .narration__img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .narration__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    .narration__overlay--dark {
+      background: linear-gradient(180deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.35) 40%, rgba(8,8,8,0.65) 100%);
+    }
+    .narration__overlay--heavy {
+      background: linear-gradient(180deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.5) 40%, rgba(8,8,8,0.75) 100%);
+    }
+    .narration__content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 60px clamp(24px, 8vw, 120px);
+      max-width: 800px;
+    }
+    .narration__text {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.92;
+    }
+    .narration__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .narration--short { min-height: 50vh; }
+    .narration--tall { min-height: 100vh; }
+
+    /* ── Narration Pair (side-by-side image + text) ── */
+    .narration-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 70vh;
+    }
+    .narration-pair__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .narration-pair__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(40px, 6vw, 100px);
+      background: var(--charcoal);
+    }
+    .narration-pair__text {
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 3vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--white);
+      opacity: 0.9;
+    }
+    .narration-pair__text em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    @media (max-width: 768px) {
+      .narration-pair { grid-template-columns: 1fr; }
+      .narration-pair__img { height: 50vh; }
+    }
+
+    /* ── Stats Grid ── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .stat__value {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat__label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--white-dim);
+      text-transform: uppercase;
+    }
+
+    /* ── Image Grid ── */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 40px;
+    }
+    .image-grid img {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 768px) {
+      .image-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── Three Worlds ── */
+    .worlds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .world__title {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .world__subtitle {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .world__text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--white-dim);
+    }
+
+    /* ── Colour Palette ── */
+    .palette {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .swatch__label {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      color: var(--white-dim);
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    /* ── Tagline ── */
+    .tagline-section {
+      text-align: center;
+      padding: clamp(120px, 15vw, 240px) clamp(24px, 5vw, 80px);
+    }
+    .tagline {
+      font-family: var(--sans);
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+    .tagline span { color: var(--gold); }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 60px clamp(24px, 5vw, 80px);
+      border-top: 1px solid var(--border);
+    }
+    .footer__text {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: var(--white-xdim);
+    }
+    .footer__link { color: var(--gold-dim); transition: color 0.3s; }
+    .footer__link:hover { color: var(--gold); }
+
+    /* ── Animations ── */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .specs { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:48px; margin-top:48px; }
+    .hero__title { letter-spacing:0.06em; }
+    .image-grid img { aspect-ratio:4/5; }
+    .narration-pair__img { min-height:70vh; }
+</style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="/" class="nav__logo">REALM OF STEEZ</a>
+    <a href="/" class="nav__back">&larr; BACK TO HOME</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__video-wrap">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/concepts/pegasus/images/pg-breakout.jpg">
+        <source src="assets/concepts/pegasus/videos/pegasus-loop.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">House Concept &middot; The Salt Flats</p>
+      <h1 class="hero__title">PEGASUS</h1>
+      <p class="hero__subtitle">Every storm comes looking for something.<br>Born of the storm.</p>
+    </div>
+  </section>
+
+  <div class="video-showcase fade-in" style="margin-top: -60px; position: relative; z-index: 3;">
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="assets/concepts/pegasus/images/pg-bolt.jpg">
+        <source src="assets/concepts/pegasus/videos/pegasus-film.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <section class="section fade-in">
+    <p class="section__label">The Idea</p>
+    <h2 class="section__title">A car that doesn't<br>outrun the storm.</h2>
+    <p class="section__text">
+      PEGASUS is an invented hypercar, and this is its launch film. No spec sheet, no top speed, no driver. Just a myth: a black stallion in a barn on the edge of a salt flat, and a car hidden under a cover beside it, both waiting for the same storm.
+    </p>
+    <p class="section__text">
+      The film is built like a legend told in four movements. Fear, then awakening, then the ordeal, then the dawn. The car never fails on screen. When the lightning finally finds it, it doesn't break. It feeds.
+    </p>
+    <div class="stats">
+      <div><p class="stat__value">85s</p><p class="stat__label">Launch Film</p></div>
+      <div><p class="stat__value">1</p><p class="stat__label">Storm</p></div>
+      <div><p class="stat__value">0</p><p class="stat__label">Drivers</p></div>
+      <div><p class="stat__value">16:9 &middot; 9:16</p><p class="stat__label">Every Format</p></div>
+    </div>
+  </section>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-barn.jpg" alt="An old timber barn on a salt flat under a lilac storm" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">A barn at the edge of the salt.<br><br>The storm is <em>already here.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-eye.jpg" alt="The black stallion's eye, frightened by the thunder" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">The thunder finds him first.<br><br>He is <em>afraid.</em></p></div>
+  </div>
+
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-glow.jpg" alt="Six slashes of light glowing through a car cover in the dark barn" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;"><p class="narration-pair__text">Beside him, under the cover,<br>something <em>answers.</em></p></div>
+  </div>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-wings.jpg" alt="The stallion rearing in the stall as two great wings unfold" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content"><p class="narration__text">Fear becomes <em>flight.</em></p></div>
+  </section>
+
+  <section class="narration narration fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-reveal.jpg" alt="The winged horse above the uncovered black car in the barn" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">Two of a kind.<br><em>One storm.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-launch.jpg" alt="The car launching out of the barn" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">The doors give way.<br><br>Most things run <em>from</em> a storm.</p></div>
+  </div>
+
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-breakout.jpg" alt="The winged horse bursting down out of the cloud base" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;"><p class="narration-pair__text">These two run <em>into</em> it.</p></div>
+  </div>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-overcar.jpg" alt="The horse flying low over the car toward the storm wall" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">Above and below.<br><em>Never apart.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-calm.jpg" alt="The car alone in the rain, charge crawling over its blades" loading="lazy" />
+    <div class="narration-pair__content"><p class="narration-pair__text">Then the storm holds its breath.<br><br>It isn't afraid of the lightning.<br><em>It's waiting for it.</em></p></div>
+  </div>
+
+  <section class="narration narration--tall fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-bolt.jpg" alt="A bolt of lightning striking the car's fin" loading="lazy" />
+    <div class="narration__overlay narration__overlay--heavy"></div>
+    <div class="narration__content"><p class="narration__text">It doesn't break.<br><em>It feeds.</em></p></div>
+  </section>
+
+  <section class="narration narration fade-in">
+    <img class="narration__img" src="assets/concepts/pegasus/images/pg-breach.jpg" alt="A blinding breach of light opening in the storm" loading="lazy" />
+    <div class="narration__overlay narration__overlay--dark"></div>
+    <div class="narration__content"><p class="narration__text">Through the eye of it,<br><em>into the light.</em></p></div>
+  </section>
+
+  <div class="narration-pair fade-in" style="direction: rtl;">
+    <img class="narration-pair__img" src="assets/concepts/pegasus/images/pg-lands.jpg" alt="The horse landing beside the car on the mirror-wet salt at dawn" loading="lazy" style="direction: ltr;" />
+    <div class="narration-pair__content" style="direction: ltr;"><p class="narration-pair__text">They say it outran the storm.<br><br><em>It was born of it.</em></p></div>
+  </div>
+
+  <section class="section fade-in">
+    <p class="section__label">The Film</p>
+    <h2 class="section__title">Four movements,<br>one legend.</h2>
+    <div class="specs">
+      <div><p class="world__subtitle">01</p><h3 class="world__title">Fear</h3><p class="world__text">A stallion alone in a barn as the storm arrives, calmed only by the glow under a cover beside him.</p></div>
+      <div><p class="world__subtitle">02</p><h3 class="world__title">Awakening</h3><p class="world__text">Wings unfold, the cover falls, the doors blow open. Horse and car leave the barn as one.</p></div>
+      <div><p class="world__subtitle">03</p><h3 class="world__title">The Ordeal</h3><p class="world__text">A gauntlet of strikes across the salt, a flight through the storm's heart, and the one bolt meant for them.</p></div>
+      <div><p class="world__subtitle">04</p><h3 class="world__title">Dawn</h3><p class="world__text">Home over a mirror of rain. The storm spent, the legend born, the sun cresting behind them.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--wide fade-in">
+    <p class="section__label">Selected Frames</p>
+    <h2 class="section__title">From the concept.</h2>
+    <div class="image-grid">
+      <img src="assets/concepts/pegasus/images/pg-roof.jpg" alt="The horse bursting through the barn roof" loading="lazy" />
+      <img src="assets/concepts/pegasus/images/pg-climb.jpg" alt="The horse climbing through a lightning-lit cloud" loading="lazy" />
+      <img src="assets/concepts/pegasus/images/pg-leader.jpg" alt="Lightning reaching down toward the car's fin" loading="lazy" />
+      <img src="assets/concepts/pegasus/images/pg-blade.jpg" alt="A wing tip meeting the car's light blade" loading="lazy" />
+      <img src="assets/concepts/pegasus/images/pg-dawn.jpg" alt="The car home at the barn, reflected in the wet salt at dawn" loading="lazy" />
+      <img src="assets/concepts/pegasus/images/pg-sunrise.jpg" alt="Horse and car silhouetted against the sunrise" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="section fade-in">
+    <p class="section__label">Colour Strategy</p>
+    <h2 class="section__title">Bruised violet,<br>then gold.</h2>
+    <p class="section__text">
+      The storm owns the palette: lilac and bruised violet over white salt, with the car's six blades of light as the only clean white in the frame. Every strike pushes the violet harder until the breach, where the whole film turns to dawn gold and the rain becomes a mirror.
+    </p>
+    <div class="palette">
+      <div><div class="swatch" style="background:#2A2238;"></div><p class="swatch__label">Storm Violet</p></div>
+      <div><div class="swatch" style="background:#9C8AB8;"></div><p class="swatch__label">Lilac Strike</p></div>
+      <div><div class="swatch" style="background:#E6E2EA;"></div><p class="swatch__label">Salt White</p></div>
+      <div><div class="swatch" style="background:#0E0E10;"></div><p class="swatch__label">Carbon Black</p></div>
+      <div><div class="swatch" style="background:#E8A867;"></div><p class="swatch__label">Dawn Gold</p></div>
+    </div>
+  </section>
+
+  <section class="tagline-section fade-in">
+    <p class="tagline">Born of <span>the storm.</span></p>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__text">
+      &copy; 2026 <a href="/" class="footer__link">REALM OF STEEZ</a> &mdash; House Concept. Brand, product and characters invented.
+    </p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

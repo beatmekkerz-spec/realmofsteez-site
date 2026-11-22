@@ -1,0 +1,23 @@
+/* Realm of Steez — shared chrome for every inner page: the floating pill nav and the house footer (matches the homepage) */
+.rs-pill, .rs-pill a { white-space: nowrap; }
+.rs-pill { position: fixed; top: 22px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; align-items: center; gap: 30px;
+  padding: 10px 10px 10px 22px; background: rgba(14,14,14,0.55); border: 1px solid rgba(201,168,76,0.22); border-radius: 999px;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  font: 400 0.62rem 'Montserrat', Helvetica, Arial, sans-serif; letter-spacing: 0.22em; text-transform: uppercase; color: #F5F0E8; }
+.rs-pill a { color: inherit; text-decoration: none; }
+.rs-pill__logo { color: #C9A84C !important; letter-spacing: 0.35em; }
+.rs-pill__links { display: flex; gap: 26px; color: rgba(245,240,232,0.6); }
+.rs-pill__links a:hover { color: #F5F0E8; }
+.rs-pill__cta { padding: 9px 18px; border-radius: 999px; background: #C9A84C; color: #0b0b0b !important; font-weight: 500; }
+.rs-foot { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 40px clamp(24px, 6vw, 110px) 50px;
+  border-top: 1px solid rgba(201,168,76,0.12); background: #050505;
+  font: 400 0.6rem 'Montserrat', Helvetica, Arial, sans-serif; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(245,240,232,0.25); }
+.rs-foot a { color: inherit; text-decoration: none; }
+.rs-foot nav { display: flex; gap: 26px; flex-wrap: wrap; color: rgba(245,240,232,0.6); }
+.rs-foot nav a:hover { color: #F5F0E8; }
+.rs-foot__logo { color: #C9A84C; letter-spacing: 0.35em; }
+@media (max-width: 820px) {
+  .rs-pill__links { display: none; }
+  .rs-pill { gap: 16px; padding: 8px 8px 8px 16px; font-size: 0.55rem; width: calc(100% - 28px); justify-content: space-between; top: 14px; }
+  .rs-foot { flex-direction: column; align-items: flex-start; }
+}

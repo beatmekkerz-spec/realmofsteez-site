@@ -1,762 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Realm of Steez — Private cinematic short film production house. Built for brands and visionaries who understand the distance between content and legacy." />
-  <meta name="author" content="Realm of Steez" />
-  <meta property="og:title" content="Realm of Steez | Cinematic Short Film Production" />
-  <meta property="og:description" content="Private cinematic short film production. Every frame authored with precision, craft, and uncompromising intention." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://realmofsteez.com/" />
-  <meta property="og:site_name" content="Realm of Steez" />
-  <meta property="og:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Realm of Steez | Cinematic Short Film Production" />
-  <meta name="twitter:description" content="Private cinematic short film production. Every frame authored with precision, craft, and uncompromising intention." />
-  <meta name="twitter:image" content="https://realmofsteez.com/assets/ROS/websiteimagewide.png" />
-  <title>Realm of Steez | Cinematic Short Film Production</title>
-  <link rel="canonical" href="https://realmofsteez.com/" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=22" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Realm of Steez",
-    "description": "Private cinematic short film production house for luxury brands.",
-    "url": "https://realmofsteez.com",
-    "email": "studio@realmofsteez.com",
-    "image": "https://realmofsteez.com/assets/ROS/websiteimagewide.png",
-    "foundingDate": "2020",
-    "knowsAbout": ["Film Production", "Short Films", "Brand Campaigns", "Visual Storytelling"]
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Realm of Steez | Cinematic Films for Brands</title>
+<meta name="description" content="Realm of Steez is a short film house for brands: cinematic films, spec worlds, 3D product builds and launch campaigns for houses that refuse to look like anyone else." />
+<meta name="author" content="Realm of Steez" />
+<link rel="canonical" href="https://realmofsteez.com/" />
+<meta property="og:title" content="Realm of Steez | Worlds, made to be remembered" />
+<meta property="og:description" content="Cinematic films, spec worlds and 3D product builds for brands that refuse to look like anyone else." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://realmofsteez.com/" />
+<meta property="og:site_name" content="Realm of Steez" />
+<meta property="og:image" content="https://realmofsteez.com/assets/crown/og-crown.jpg" />
+<meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Realm of Steez | Worlds, made to be remembered" />
+<meta name="twitter:description" content="Cinematic films, spec worlds and 3D product builds for brands." />
+<meta name="twitter:image" content="https://realmofsteez.com/assets/crown/og-crown.jpg" />
+<meta name="theme-color" content="#050505" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230d0d0d'/><text y='.9em' font-size='80' x='50%' dominant-baseline='middle' text-anchor='middle' fill='%23C9A84C' font-family='serif'>R</text></svg>" />
+<script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "Organization", "name": "Realm of Steez", "url": "https://realmofsteez.com",
+  "description": "Short film house for brands: cinematic films, spec worlds, 3D product builds and launch campaigns.",
+  "email": "studio@realmofsteez.com", "image": "https://realmofsteez.com/assets/crown/og-crown.jpg", "foundingDate": "2020", "sameAs": ["https://www.instagram.com/realmofsteeze/", "https://www.threads.net/@realmofsteeze"],
+  "knowsAbout": ["Brand films", "Short films", "3D product visualisation", "Campaigns", "Visual storytelling"] }
+</script>
+<script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #050505; --gold: #C9A84C; --gold-dim: rgba(201,168,76,0.45);
+    --white: #F5F0E8; --white-dim: rgba(245,240,232,0.6); --white-xdim: rgba(245,240,232,0.25);
+    --serif: 'Cormorant Garamond', Georgia, serif; --sans: 'Montserrat', Helvetica, Arial, sans-serif;
   }
-  </script>
-  <script defer data-domain="realmofsteez.com" src="https://plausible.io/js/script.js"></script>
-</head>
+  html, body { background: var(--black); color: var(--white); font-family: var(--sans); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  a { color: inherit; text-decoration: none; }
 
+  /* ── Hero: the Crown ── */
+  .hero { position: relative; height: 100vh; min-height: 640px; overflow: hidden; }
+  #crown { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .hero__fade { position: absolute; inset: auto 0 0 0; height: 30vh; background: linear-gradient(180deg, rgba(5,5,5,0), var(--black)); pointer-events: none; }
+
+  /* floating pill nav */
+    .pill, .pill a { white-space: nowrap; }
+  .pill {
+    position: fixed; top: 22px; left: 50%; transform: translateX(-50%); z-index: 20;
+    display: flex; align-items: center; gap: 30px; padding: 10px 12px 10px 22px;
+    background: rgba(14,14,14,0.55); border: 1px solid rgba(201,168,76,0.22); border-radius: 999px;
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase;
+  }
+  .pill__logo { color: var(--gold); letter-spacing: 0.35em; font-weight: 400; }
+  .pill__links { display: flex; gap: 26px; color: var(--white-dim); }
+  .pill__links a:hover { color: var(--white); }
+  .pill__cta { padding: 9px 18px; border-radius: 999px; background: var(--gold); color: #0b0b0b; font-weight: 500; }
+
+  /* headline left, brief right, manifesto bottom */
+  .hero__title {
+    position: absolute; left: clamp(24px, 6vw, 110px); top: 50%; transform: translateY(-50%); z-index: 5;
+    font-family: var(--serif); font-weight: 300; font-size: clamp(2.6rem, 5.4vw, 5.2rem); line-height: 1.02;
+    max-width: 9ch; pointer-events: none; text-shadow: 0 2px 30px rgba(0,0,0,0.9);
+  }
+  .hero__title em { font-style: italic; color: var(--gold); }
+  .hero__brief {
+    position: absolute; right: clamp(24px, 6vw, 110px); top: 50%; transform: translateY(-30%); z-index: 5;
+    width: 230px; font-size: 0.7rem; line-height: 1.75; color: var(--white-dim); font-weight: 300;
+  }
+  .hero__brief a {
+    display: flex; justify-content: space-between; margin-top: 18px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--white-xdim); color: var(--white); letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.6rem;
+    transition: border-color .3s;
+  }
+  .hero__brief a:hover { border-color: var(--gold); }
+  .hero__manifesto {
+    position: absolute; left: 50%; bottom: 46px; transform: translateX(-50%); z-index: 5; text-align: center;
+    font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--white-dim); line-height: 2; width: min(90vw, 620px);
+  }
+  .hero__manifesto::before { content: "+"; display: block; color: var(--gold); font-size: 0.9rem; margin-bottom: 8px; letter-spacing: 0; }
+
+  /* ── House Concepts: full-bleed films ── */
+  .films { padding: 120px 0 60px; }
+  .films__head { padding: 0 clamp(24px, 6vw, 110px) 56px; display: flex; justify-content: space-between; align-items: end; }
+  .films__label { font-size: 0.6rem; letter-spacing: 0.4em; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; }
+  .films__title { font-family: var(--serif); font-weight: 300; font-size: clamp(2rem, 4vw, 3.4rem); }
+  .film { position: relative; height: 92vh; overflow: hidden; border-top: 1px solid rgba(201,168,76,0.12); }
+  .film video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(0.62); transform: scale(1.04); transition: filter .8s, transform 1.6s; }
+  .film:hover video { filter: brightness(0.8); transform: scale(1); }
+  .film__meta { position: absolute; left: clamp(24px, 6vw, 110px); bottom: 60px; z-index: 2; max-width: 520px; }
+  .film__cat { font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); }
+  .film__name { font-family: var(--serif); font-weight: 300; font-size: clamp(2.6rem, 6vw, 5.6rem); letter-spacing: 0.04em; line-height: 1; margin: 12px 0 14px; }
+  .film__line { font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--white-dim); }
+  .film__link { display: inline-block; margin-top: 22px; font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; border-bottom: 1px solid var(--gold-dim); padding-bottom: 6px; }
+  .film::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,5,5,0.75) 0%, rgba(5,5,5,0.1) 60%); pointer-events: none; }
+
+  .note { text-align: center; padding: 80px 24px 100px; font-size: 0.6rem; letter-spacing: 0.3em; color: var(--white-xdim); text-transform: uppercase; }
+
+  @media (max-width: 820px) {
+    .pill__links { display: none; }
+    .pill { gap: 16px; padding: 8px 8px 8px 16px; font-size: 0.55rem; }
+    .hero__manifesto { font-size: 0.5rem; letter-spacing: 0.18em; bottom: 28px; }
+    .hero__title { top: 15%; }
+    .hero__title { top: 22%; transform: none; max-width: 10ch; }
+    .hero__brief { top: auto; bottom: 120px; transform: none; right: auto; left: clamp(24px, 6vw, 110px); }
+  }
+  @media (prefers-reduced-motion: reduce) { .film video { transition: none; } }
+
+  /* centred crest: copy lives in the bottom band, either side of the lower halo */
+  .hero__title { top: auto; bottom: 64px; transform: none; font-size: clamp(2rem, 3.6vw, 3.6rem); max-width: 11ch; }
+  .hero__brief { top: auto; bottom: 70px; transform: none; }
+  .hero__manifesto { display: none; }
+  .hero::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgba(5,5,5,0.35) 0%, rgba(5,5,5,0) 18%, rgba(5,5,5,0) 62%, rgba(5,5,5,0.85) 100%); }
+  .hero__title, .hero__brief, .pill { z-index: 6; }
+
+  .pane-tip { position: fixed; left: 0; top: 0; z-index: 30; pointer-events: none; opacity: 0; transition: opacity .2s;
+    padding: 10px 14px; border: 1px solid rgba(201,168,76,0.35); border-radius: 2px; background: rgba(8,8,8,0.78);
+    backdrop-filter: blur(8px); font-family: var(--serif); font-size: 1.15rem; color: var(--white); white-space: nowrap; }
+  .pane-tip span { display: block; font-family: var(--sans); font-size: 0.55rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .pane-tip em { font-style: normal; color: var(--gold); }
+  .pane-tip.on { opacity: 1; }
+  #crown { pointer-events: auto; }
+
+  /* polish: one-line headline under the panes, the brief on its own shadow, the copy arrives after the light */
+  .hero__title { bottom: 44px; max-width: none; white-space: nowrap; font-size: clamp(1.9rem, 2.9vw, 3rem); }
+  .hero__brief { bottom: 44px; color: rgba(245,240,232,0.82); text-shadow: 0 1px 12px rgba(0,0,0,0.9); }
+  .hero__brief::before { content: ""; position: absolute; inset: -60px -70px -50px -80px; z-index: -1; pointer-events: none;
+    background: radial-gradient(closest-side, rgba(5,5,5,0.9), rgba(5,5,5,0.7) 55%, rgba(5,5,5,0)); }
+  .hero::after { background: linear-gradient(180deg, rgba(5,5,5,0.55) 0%, rgba(5,5,5,0) 16%, rgba(5,5,5,0) 66%, rgba(5,5,5,0.7) 84%, rgba(5,5,5,0.95) 100%); }
+  .hero__title, .hero__brief, .pill { opacity: 0; transition: opacity 1.4s ease, transform 1.4s cubic-bezier(.2,.7,.2,1); }
+  .hero__title, .hero__brief { transform: translateY(14px); }
+  .lit .pill { opacity: 1; transition-delay: .9s; }
+  .lit .hero__title { opacity: 1; transform: none; transition-delay: 1.3s; }
+  .lit .hero__brief { opacity: 1; transform: none; transition-delay: 1.6s; }
+  .pill { transform: translateX(-50%); }
+  @media (prefers-reduced-motion: reduce) { .hero__title, .hero__brief, .pill { transition: none; } }
+
+  /* ── the dive: the hero is pinned for a screen and a half of scroll ── */
+  .hero-wrap { height: 220vh; position: relative; }
+  .hero-wrap .hero { position: sticky; top: 0; }
+  .hero__title, .hero__brief { filter: opacity(calc(1 - var(--dive, 0)*3)); translate: 0 calc(var(--dive, 0)*-60px); }
+  .hero::after { opacity: calc(1 - var(--dive, 0)); }
+  .hero__fade { opacity: calc(1 - var(--dive, 0)*2); }
+
+  /* films drift against the scroll: the picture moves slower than the page */
+  .film > video:not(.film__frame) { transform: translate3d(0, var(--py, 0px), 0) scale(1.14); transition: filter .8s; }
+  .film:hover > video:not(.film__frame) { transform: translate3d(0, var(--py, 0px), 0) scale(1.14); }
+  .film--tall video.film__bg { transform: translate3d(0, var(--py, 0px), 0) scale(1.3); }
+  .film--tall:hover video.film__bg { transform: translate3d(0, var(--py, 0px), 0) scale(1.3); }
+  .film--tall video.film__frame { translate: 0 calc(var(--py, 0px) * -0.35); }
+
+  /* ── in three dimensions: each build is scrubbed by the scroll ── */
+  .workshop { border-top: 1px solid rgba(201,168,76,0.12); }
+  .workshop > .films__head { padding-top: 120px; }
+  .stage { position: relative; height: 280vh; }
+  .stage__pin { position: sticky; top: 0; height: 100vh; overflow: hidden; background: var(--stage-bg, #0b0b0b); }
+  .stage__pin video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .stage__meta { position: absolute; left: clamp(24px, 6vw, 110px); bottom: 64px; z-index: 2; max-width: 440px; }
+  .stage__meta .film__name { font-size: clamp(2.4rem, 5vw, 4.6rem); }
+  .stage--light .stage__meta { color: #121212; }
+  .stage--light .film__cat { color: #7d6220; }
+  .stage--light .film__line { color: rgba(18,18,18,0.62); }
+  .stage--light .film__link { border-color: rgba(18,18,18,0.35); }
+  .stage--dark .stage__pin::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0) 55%); }
+  .stage__step { position: absolute; right: clamp(24px, 6vw, 110px); bottom: 64px; z-index: 2; width: 180px; font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase; }
+  .stage--light .stage__step { color: rgba(18,18,18,0.6); }
+  .stage--dark .stage__step { color: var(--white-dim); }
+  .stage__step i { display: block; height: 1px; margin-top: 12px; background: currentColor; opacity: .25; position: relative; }
+  .stage__step i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: calc(var(--p, 0)*100%); background: var(--gold); opacity: 1; height: 1px; }
+  @media (max-width: 760px) {
+    .hero-wrap { height: 190svh; }
+    .stage { height: 240svh; }
+    .stage__pin video { object-fit: contain; }
+    .stage__meta { bottom: 40px; right: 24px; left: 24px; }
+    .stage__step { top: 88px; bottom: auto; right: 24px; width: 120px; }
+  }
+
+  /* ── the full slate ── */
+  html { scroll-behavior: smooth; }
+
+  /* play the full film with its sound, over the page */
+  .film__play { display: flex; align-items: center; gap: 12px; margin-top: 22px; padding: 0; background: none; border: 0; cursor: pointer;
+    color: var(--white); font: 400 0.6rem var(--sans); letter-spacing: 0.25em; text-transform: uppercase; }
+  .film__play i { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--gold); position: relative; transition: background .3s; }
+  .film__play i::after { content: ""; position: absolute; left: 13px; top: 10px; border-left: 10px solid var(--gold); border-top: 7px solid transparent; border-bottom: 7px solid transparent; }
+  .film__play:hover i { background: rgba(201,168,76,0.15); }
+  .hero__reel { margin-top: 18px; pointer-events: auto; }
+  .film--half .film__play { margin: 14px auto 0; }
+  .theatre { position: fixed; inset: 0; z-index: 100; background: rgba(3,3,3,0.96); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .4s; }
+  .theatre.on { opacity: 1; pointer-events: auto; }
+  .theatre video { max-width: 94vw; max-height: 88vh; background: #000; box-shadow: 0 40px 140px rgba(0,0,0,.8); }
+  .theatre__x { position: absolute; top: 22px; right: 28px; background: none; border: 1px solid rgba(245,240,232,.3); border-radius: 999px; color: var(--white);
+    padding: 10px 18px; font: 400 0.6rem var(--sans); letter-spacing: .25em; text-transform: uppercase; cursor: pointer; }
+  .theatre__t { position: absolute; top: 30px; left: 32px; font-family: var(--serif); font-size: 1.3rem; letter-spacing: .06em; }
+  .films__count { font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--white-dim); }
+  .film__link + .film__link { margin-left: 22px; }
+  .film-pair { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid rgba(201,168,76,0.12); }
+  .film-pair .film { border-top: 0; height: 100vh; }
+  .film-pair .film + .film { border-left: 1px solid rgba(201,168,76,0.12); }
+  .film--half video.film__frame { inset: 6vh auto auto 50%; transform: translateX(-50%); height: 60vh; }
+  .film--half:hover video.film__frame { transform: translateX(-50%); }
+  .film--half .film__meta { left: 0; right: 0; bottom: 5vh; max-width: none; text-align: center; }
+  .film--half .film__name { font-size: clamp(2rem, 3.4vw, 3.4rem); margin: 8px 0 8px; }
+  .film--half::after { background: linear-gradient(0deg, rgba(5,5,5,0.8) 0%, rgba(5,5,5,0) 40%); }
+
+  .house { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 110px); align-items: center; padding: 160px clamp(24px, 6vw, 110px) 120px; border-top: 1px solid rgba(201,168,76,0.12); }
+  .house__title { font-family: var(--serif); font-weight: 300; font-size: clamp(2.4rem, 4.6vw, 4.4rem); line-height: 1.02; margin: 14px 0 34px; }
+  .house__title em { color: var(--gold); }
+  .house__text p { font-size: 0.85rem; line-height: 1.95; color: var(--white-dim); font-weight: 300; max-width: 52ch; margin-bottom: 18px; }
+  .house__text .house__lead { font-family: var(--serif); font-size: 1.35rem; line-height: 1.55; color: var(--white); }
+  .house__img { position: relative; }
+  .house__img img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; filter: brightness(0.85); }
+  .house__img figcaption { position: absolute; left: -40px; bottom: 40px; padding: 22px 26px; background: rgba(8,8,8,0.82); backdrop-filter: blur(10px); border: 1px solid rgba(201,168,76,0.25);
+    font-family: var(--serif); font-style: italic; font-size: 1.15rem; max-width: 300px; }
+
+  .access { padding: 120px 0 120px; border-top: 1px solid rgba(201,168,76,0.12); }
+  .access__grid { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0 clamp(24px, 6vw, 110px); border-top: 1px solid var(--white-xdim); }
+  .access__grid article { padding: 36px 28px 40px 0; border-right: 1px solid rgba(245,240,232,0.1); }
+  .access__grid article + article { padding-left: 28px; }
+  .access__grid article:last-child { border-right: 0; }
+  .access__lvl { font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); }
+  .access__grid h3 { font-family: var(--serif); font-weight: 300; font-size: 1.9rem; margin: 12px 0 22px; }
+  .access__grid ul { list-style: none; font-size: 0.78rem; line-height: 2.2; color: var(--white-dim); font-weight: 300; }
+  .access__grid .is-key h3 { color: var(--gold); }
+  .access__tag { margin-top: 22px; font-family: var(--serif); font-style: italic; color: var(--white); }
+
+  .brief { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(40px, 6vw, 110px); padding: 140px clamp(24px, 6vw, 110px); border-top: 1px solid rgba(201,168,76,0.12); }
+  .brief__left p { font-size: 0.85rem; line-height: 1.9; color: var(--white-dim); margin-top: 22px; max-width: 40ch; }
+  .brief__open { display: flex; align-items: center; gap: 12px; font-size: 0.62rem !important; letter-spacing: 0.25em; text-transform: uppercase; }
+  .brief__open span { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 12px var(--gold); }
+  .brief__mail { display: inline-block; margin-top: 26px; font-family: var(--serif); font-size: 1.5rem; border-bottom: 1px solid var(--gold-dim); padding-bottom: 4px; }
+  .brief__form { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 28px; align-content: start; }
+  .brief__form .w2 { grid-column: 1 / -1; }
+  .brief__form label { display: flex; flex-direction: column; gap: 10px; font-size: 0.56rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--white-dim); }
+  .brief__form input, .brief__form select, .brief__form textarea { background: transparent; border: 0; border-bottom: 1px solid var(--white-xdim); color: var(--white); padding: 8px 0 10px;
+    font: 300 0.95rem var(--sans); letter-spacing: 0; text-transform: none; outline: none; transition: border-color .3s; border-radius: 0; -webkit-appearance: none; appearance: none; }
+  .brief__form select option { background: #0b0b0b; }
+  .brief__form textarea { resize: vertical; }
+  .brief__form input:focus, .brief__form select:focus, .brief__form textarea:focus { border-color: var(--gold); }
+  .brief__done { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--gold); }
+  .brief__form button b { font-weight: 500; }
+  .brief__form button { justify-self: start; display: flex; gap: 40px; padding: 16px 26px; border: 0; border-radius: 999px; background: var(--gold); color: #0b0b0b;
+    font: 500 0.62rem var(--sans); letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; }
+
+  .foot { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 40px clamp(24px, 6vw, 110px) 50px; border-top: 1px solid rgba(201,168,76,0.12);
+    font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white-xdim); }
+  .foot nav { display: flex; gap: 26px; color: var(--white-dim); }
+  .foot nav a:hover { color: var(--white); }
+
+  @media (max-width: 760px) {
+    .films__head { flex-direction: column; align-items: start; gap: 14px; }
+    .film-pair { grid-template-columns: 1fr; }
+    .film__link + .film__link { margin-left: 0; margin-top: 14px; }
+    .film__meta .film__link { display: table; }
+    .film-pair .film { height: 82svh; }
+    .film-pair .film + .film { border-left: 0; border-top: 1px solid rgba(201,168,76,0.12); }
+    .film--half video.film__frame { transform: none; }
+    .film--half .film__meta { text-align: left; left: 24px; right: 24px; bottom: 40px; }
+    .house, .brief { grid-template-columns: 1fr; padding-top: 90px; padding-bottom: 80px; }
+    .house__img figcaption { left: 16px; right: 16px; bottom: 16px; }
+    .access { padding: 90px 0; }
+    .access__grid { grid-template-columns: 1fr; }
+    .access__grid article, .access__grid article + article { padding: 30px 0; border-right: 0; border-bottom: 1px solid rgba(245,240,232,0.1); }
+    .brief__form { grid-template-columns: 1fr; }
+    .foot { flex-direction: column; align-items: start; }
+    .foot nav { flex-wrap: wrap; gap: 16px 22px; }
+  }
+
+  /* vertical films keep their full resolution: shown whole in a 9:16 frame, the same film blurred behind */
+  .film--tall video.film__bg { filter: blur(38px) brightness(0.35) saturate(1.2); transform: scale(1.25); }
+  .film--tall:hover video.film__bg { filter: blur(38px) brightness(0.45) saturate(1.2); transform: scale(1.25); }
+  .film--tall video.film__frame { inset: 7vh clamp(24px, 9vw, 160px) 7vh auto; left: auto; width: auto; height: 78vh; aspect-ratio: 9/16;
+    filter: none; transform: none; border: 1px solid rgba(201,168,76,0.18); box-shadow: 0 40px 120px rgba(0,0,0,0.7); }
+  .film--tall:hover video.film__frame { filter: none; transform: none; }
+
+  /* phones: the crest alone, copy stacked under it, films full-bleed (vertical ones fill the screen as shot) */
+  @media (max-width: 760px) {
+    .hero { height: 100svh; min-height: 560px; }
+    .pill { width: calc(100% - 28px); justify-content: space-between; top: 14px; }
+    .hero__title { left: 24px; right: 24px; bottom: 170px; white-space: normal; max-width: 11ch; font-size: clamp(2.3rem, 10vw, 3rem); line-height: 1.05; }
+    .hero__brief { left: 24px; right: 24px; bottom: 34px; width: auto; font-size: 0.72rem; }
+    .hero__brief::before { inset: -40px -24px -34px -24px; }
+    .films { padding: 80px 0 30px; }
+    .films__head { padding-bottom: 36px; }
+    .film { height: 82svh; }
+    .film__meta { left: 24px; right: 24px; bottom: 40px; }
+    .film__name { font-size: clamp(2.4rem, 12vw, 3.4rem); }
+    .film::after { background: linear-gradient(0deg, rgba(5,5,5,0.85) 0%, rgba(5,5,5,0.1) 55%); }
+    .film--tall video.film__bg { display: none; }
+    .film--tall video.film__frame { inset: 0; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; border: 0; box-shadow: none; filter: brightness(0.75); }
+  }
+</style>
+<!--
+{ "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+} } -->
+</head>
 <body>
 
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  NAVIGATION                                         -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav__logo">
-      <span class="nav__logo-text">REALM OF STEEZ</span>
-    </div>
-    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav__links" id="navLinks" role="list">
-      <li><a href="#films" class="nav__link">Films</a></li>
-      <li><a href="#portfolio" class="nav__link">Collaborations</a></li>
-      <li><a href="#concepts" class="nav__link">House Concepts</a></li>
-      <li><a href="#about" class="nav__link">About</a></li>
-      <li><a href="#contact" class="nav__link">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="pill">
+  <a href="/" class="pill__logo">REALM OF STEEZ</a>
+  <div class="pill__links"><a href="#films">Work</a><a href="#three-d">3D</a><a href="#about">The House</a><a href="#services">Services</a><a href="/journal">Journal</a></div>
+  <a href="#contact" class="pill__cta">Start a brief</a>
+</nav>
 
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  HERO — Full-screen cinematic intro                 -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="hero" id="hero" aria-label="Hero section">
+<div class="hero-wrap">
+<section class="hero">
+  <canvas id="crown"></canvas>
+  <h1 class="hero__title">Worlds, <em>made</em> to be remembered.</h1>
+  <div class="hero__brief">
+    Brand films, spec worlds and campaigns for houses that refuse to look like anyone else. Every frame is built, none of them is borrowed.
+    <a href="#contact">Start a brief <span>&rarr;</span></a>
+    <button class="film__play hero__reel" data-film="assets/reel/ros-reel.mp4" data-title="The Reel &middot; 0:42"><i></i>Watch the reel</button>
+  </div>
+  <p class="hero__manifesto">Films, worlds and launch campaigns. The tools change every season. The taste does not.</p>
+  <div class="hero__fade"></div>
+</section>
+</div>
 
-    <!-- Video background placeholder (replace src with actual portal video) -->
-    <div class="hero__video-wrap">
-      <video
-        class="hero__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        aria-hidden="true"
-        data-src-desktop="assets/ROS/kling_20260221_Image_to_Video_The_glowin_100_1.mp4"
-        data-src-mobile="assets/ROS/hero-mobile.mp4"
-        poster="assets/ROS/websiteimagewide.png">
-        <source src="assets/ROS/kling_20260221_Image_to_Video_The_glowin_100_1.mp4" type="video/mp4" />
-      </video>
-      <div class="hero__overlay" aria-hidden="true"></div>
-    </div>
+<section class="films" id="films">
+  <div class="films__head">
+    <div><p class="films__label">The Work</p><h2 class="films__title">Films from the house.</h2></div>
+    <p class="films__count">08 films &middot; 1 collaboration</p>
+  </div>
+  <article class="film film--tall">
+    <video class="film__bg" aria-hidden="true" tabindex="-1" muted loop playsinline preload="none" poster="assets/Complice%20Collaboration/complice/complice-loop.jpg"><source src="assets/Complice%20Collaboration/complice/complice-loop.mp4" type="video/mp4" /></video>
+    <video class="film__frame" muted loop playsinline preload="none" poster="assets/Complice%20Collaboration/complice/complice-loop.jpg"><source src="assets/Complice%20Collaboration/complice/complice-loop.mp4" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">Collaboration &middot; Complice Skin</p><h3 class="film__name">COMPLICE</h3><p class="film__line">AM Serum. Your partner in crime.</p><a class="film__link" href="/complice-collaboration">View collaboration &rarr;</a> <a class="film__link" href="/complice-case-study">View case study &rarr;</a><button class="film__play" data-film="assets/Complice%20Collaboration/complice/film.mp4" data-title="COMPLICE"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film">
+    <video muted loop playsinline preload="none" poster="assets/concepts/pegasus/images/pg-bolt.jpg"><source src="assets/concepts/pegasus/videos/pegasus-loop.mp4?v=2" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; The Salt Flats</p><h3 class="film__name">PEGASUS</h3><p class="film__line">Born of the storm.</p><a class="film__link" href="/pegasus">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/pegasus/videos/pegasus-film.mp4" data-title="PEGASUS"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film film--tall">
+    <video class="film__bg" aria-hidden="true" tabindex="-1" muted loop playsinline preload="none" poster="assets/concepts/rosso-fuga/images/rf-print.jpg"><source src="assets/concepts/rosso-fuga/videos/rosso-fuga-loop.mp4?v=2" type="video/mp4" /></video>
+    <video class="film__frame" muted loop playsinline preload="none" poster="assets/concepts/rosso-fuga/images/rf-print.jpg"><source src="assets/concepts/rosso-fuga/videos/rosso-fuga-loop.mp4?v=2" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Amalfi, 1962</p><h3 class="film__name">ROSSO FUGA</h3><p class="film__line">Only her lips keep their colour. Leave a mark.</p><a class="film__link" href="/rosso-fuga">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/rosso-fuga/videos/rosso-fuga-film.mp4" data-title="ROSSO FUGA"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film">
+    <video muted loop playsinline preload="none" poster="assets/concepts/verrier/images/vr-split.jpg"><source src="assets/concepts/verrier/videos/verrier-loop.mp4?v=2" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Locarno</p><h3 class="film__name">VERRIER</h3><p class="film__line">Two moonphase watches that keep the same minute.</p><a class="film__link" href="/verrier">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/verrier/videos/verrier-film.mp4" data-title="VERRIER"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film film--tall">
+    <video class="film__bg" aria-hidden="true" tabindex="-1" muted loop playsinline preload="none" poster="assets/concepts/passagem/images/ps-cup.jpg"><source src="assets/concepts/passagem/videos/passagem-loop.mp4?v=2" type="video/mp4" /></video>
+    <video class="film__frame" muted loop playsinline preload="none" poster="assets/concepts/passagem/images/ps-cup.jpg"><source src="assets/concepts/passagem/videos/passagem-loop.mp4?v=2" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Lisbon</p><h3 class="film__name">PASSAGEM</h3><p class="film__line">Some things are worth passing on.</p><a class="film__link" href="/passagem">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/passagem/videos/passagem-film.mp4" data-title="PASSAGEM"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film">
+    <video muted loop playsinline preload="none" poster="assets/concepts/nuit-blanche/images/nb-hud.jpg"><source src="assets/concepts/nuit-blanche/videos/nuit-blanche-loop.mp4?v=2" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Chamonix</p><h3 class="film__name">NUIT BLANCHE</h3><p class="film__line">At midnight they kill the lights. She isn&rsquo;t done.</p><a class="film__link" href="/nuit-blanche">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/nuit-blanche/videos/nuit-blanche-film.mp4" data-title="NUIT BLANCHE"><i></i>Play the film, sound on</button></div>
+  </article>
+  <div class="film-pair">
+  <article class="film film--tall film--half">
+    <video class="film__bg" aria-hidden="true" tabindex="-1" muted loop playsinline preload="none" poster="assets/noir%C3%A8me/videos/noireme-loop.jpg"><source src="assets/noir%C3%A8me/videos/noireme-loop.mp4" type="video/mp4" /></video>
+    <video class="film__frame" muted loop playsinline preload="none" poster="assets/noir%C3%A8me/videos/noireme-loop.jpg"><source src="assets/noir%C3%A8me/videos/noireme-loop.mp4" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Eau de Parfum</p><h3 class="film__name">NOIR&Egrave;ME</h3><p class="film__line">A fragrance found in the dark.</p><a class="film__link" href="/noireme">View case study &rarr;</a><button class="film__play" data-film="assets/noir%C3%A8me/videos/noireme-film.mp4" data-title="NOIR&Egrave;ME"><i></i>Play the film, sound on</button></div>
+  </article>
+  <article class="film film--tall film--half">
+    <video class="film__bg" aria-hidden="true" tabindex="-1" muted loop playsinline preload="none" poster="assets/concepts/mars-ad-the-first-step/videos/first-step-loop.jpg"><source src="assets/concepts/mars-ad-the-first-step/videos/first-step-loop.mp4" type="video/mp4" /></video>
+    <video class="film__frame" muted loop playsinline preload="none" poster="assets/concepts/mars-ad-the-first-step/videos/first-step-loop.jpg"><source src="assets/concepts/mars-ad-the-first-step/videos/first-step-loop.mp4" type="video/mp4" /></video>
+    <div class="film__meta"><p class="film__cat">House Concept &middot; Mars</p><h3 class="film__name">THE FIRST STEP</h3><p class="film__line">An athlete takes the first step on alien soil.</p><a class="film__link" href="/the-first-step">View case study &rarr;</a><button class="film__play" data-film="assets/concepts/mars-ad-the-first-step/videos/first-step-film.mp4" data-title="THE FIRST STEP"><i></i>Play the film, sound on</button></div>
+  </article>
+  </div>
+</section>
 
-    <!-- Cinematic grain overlay -->
-    <div class="hero__grain" aria-hidden="true"></div>
-
-    <!-- Hero content -->
-    <div class="hero__content">
-      <!-- Title is carried by the hero background image -->
-      <h1 class="sr-only">Realm of Steez — Cinematic Short Film Production</h1>
-
-      <div class="hero__cta-wrap">
-        <a href="#films" class="hero__cta" aria-label="View our cinematic portfolio">
-          <span>View Portfolio</span>
-          <svg class="hero__cta-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Scroll indicator -->
-      <div class="hero__scroll" aria-hidden="true">
-        <div class="hero__scroll-line"></div>
-        <span class="hero__scroll-text">Scroll</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  MARQUEE STRIP                                      -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>FILM PRODUCTION</span>
-      <span class="marquee__dot">✦</span>
-      <span>VISUAL DIRECTION</span>
-      <span class="marquee__dot">✦</span>
-      <span>AI STORYTELLING</span>
-      <span class="marquee__dot">✦</span>
-      <span>CINEMATIC WORLDS</span>
-      <span class="marquee__dot">✦</span>
-      <span>LUXURY CREATIVE</span>
-      <span class="marquee__dot">✦</span>
-      <span>FILM PRODUCTION</span>
-      <span class="marquee__dot">✦</span>
-      <span>VISUAL DIRECTION</span>
-      <span class="marquee__dot">✦</span>
-      <span>AI STORYTELLING</span>
-      <span class="marquee__dot">✦</span>
-      <span>CINEMATIC WORLDS</span>
-      <span class="marquee__dot">✦</span>
-      <span>LUXURY CREATIVE</span>
-      <span class="marquee__dot">✦</span>
+<section class="workshop" id="three-d">
+  <div class="films__head">
+    <div><p class="films__label">In Three Dimensions</p><h2 class="films__title">Products, built to the last screw.</h2></div>
+    <p class="films__count">Scroll to build</p>
+  </div>
+  <div class="stage stage--light" style="--stage-bg:#c7cfd6">
+    <div class="stage__pin">
+      <video muted playsinline preload="auto" poster="assets/workshop/verrier-build.jpg" src="assets/workshop/verrier-build.mp4"></video>
+      <div class="stage__meta"><p class="film__cat">3D Product &middot; Verrier</p><h3 class="film__name">VERRIER</h3><p class="film__line">The moonphase calibre, taken apart and set back together, part by part.</p><a class="film__link" href="/verrier">See the film &rarr;</a></div>
+      <p class="stage__step">Calibre &middot; exploded<i></i></p>
     </div>
   </div>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  FEATURED FILM (16:9)                               -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="featured" id="films" aria-labelledby="featured-heading">
-    <div class="featured__inner">
-      <div class="section-header">
-        <span class="section-label" aria-hidden="true">Featured Film</span>
-        <h2 class="section-title" id="featured-heading">Pegasus &mdash; Born of the Storm</h2>
-        <p class="section-sub">A black stallion, a car under a cover, and the night the storm finally found them both.</p>
-      </div>
-      <div class="reel__player reel__player--landscape featured__player" data-reel>
-        <video playsinline muted loop preload="none" poster="assets/concepts/pegasus/images/pg-bolt.jpg"
-          data-src-desktop="assets/concepts/pegasus/videos/pegasus-film.mp4"
-          data-src-mobile="assets/concepts/pegasus/videos/pegasus-film.mp4">
-          <source src="assets/concepts/pegasus/videos/pegasus-film.mp4" type="video/mp4" />
-        </video>
-        <div class="reel__play" data-reel-play>
-          <div class="reel__play-icon">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-          </div>
-          <span class="reel__play-label">Play</span>
-        </div>
-        <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
-        </div>
-      </div>
-      <div class="featured__meta">
-        <span class="featured__tag">House Concept &middot; The Salt Flats &middot; 85s</span>
-        <a href="/pegasus" class="portfolio__link">View Case Study <span aria-hidden="true">&rarr;</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  SHOWREEL                                           -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="reel" id="reel" aria-label="Vertical Films">
-    <div class="reel__inner">
-
-      <div class="section-header">
-        <span class="section-label" aria-hidden="true">Film</span>
-        <h2 class="section-title">Vertical Films</h2>
-      </div>
-
-      <div class="reel__dual">
-
-        <!-- Complice -->
-        <div class="reel__column">
-          <div class="reel__header">
-            <span class="section-label" aria-hidden="true">Short Film</span>
-            <h2 class="reel__title">Complice AM Serum</h2>
-          </div>
-          <div class="reel__player" id="reelPlayer" data-reel>
-            <video
-              id="reelVideo"
-              playsinline
-              muted
-              loop
-              preload="none"
-              poster="assets/Complice Collaboration/complice/still-portrait.jpg"
-              data-src-desktop="assets/Complice Collaboration/complice/film.mp4"
-              data-src-mobile="assets/Complice Collaboration/complice/film-mobile.mp4"
-            >
-              <source src="assets/Complice Collaboration/complice/film.mp4" type="video/mp4" />
-            </video>
-            <div class="reel__play" data-reel-play>
-              <div class="reel__play-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-              </div>
-              <span class="reel__play-label">Play</span>
-            </div>
-            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- Noirème -->
-        <div class="reel__column">
-          <div class="reel__header">
-            <span class="section-label" aria-hidden="true">Short Film</span>
-            <h2 class="reel__title" style="font-family:'Playfair Display','Cormorant Garamond',serif;">Noirème</h2>
-          </div>
-          <div class="reel__player" id="reelPlayerNoireme" data-reel>
-            <video
-              playsinline
-              muted
-              loop
-              preload="none"
-              poster="assets/noir%C3%A8me/images/noireme-film-poster.jpg"
-              data-src-desktop="assets/noir%C3%A8me/videos/noireme-film.mp4"
-              data-src-mobile="assets/noir%C3%A8me/videos/noireme-film-mobile.mp4"
-            >
-              <source src="assets/noir%C3%A8me/videos/noireme-film.mp4" type="video/mp4" />
-            </video>
-            <div class="reel__play" data-reel-play>
-              <div class="reel__play-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-              </div>
-              <span class="reel__play-label">Play</span>
-            </div>
-            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
-            </div>
-          </div>
-        </div>
-
-        <!-- The First Step -->
-        <div class="reel__column">
-          <div class="reel__header">
-            <span class="section-label" aria-hidden="true">Short Film</span>
-            <h2 class="reel__title">The First Step</h2>
-          </div>
-          <div class="reel__player" id="reelPlayerMars" data-reel>
-            <video
-              playsinline
-              muted
-              loop
-              preload="none"
-              poster="assets/concepts/mars-ad-the-first-step/images/first-step-poster-eye.jpg"
-              data-src-desktop="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4"
-              data-src-mobile="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4"
-            >
-              <source src="assets/concepts/mars-ad-the-first-step/videos/MarsAd_Final_web.mp4" type="video/mp4" />
-            </video>
-            <div class="reel__play" data-reel-play>
-              <div class="reel__play-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
-              </div>
-              <span class="reel__play-label">Play</span>
-            </div>
-            <div class="reel__mute" data-reel-mute aria-label="Unmute video" role="button" tabindex="0" hidden>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6" class="reel__mute-x"/></svg>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  PORTFOLIO                                          -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  COLLABORATIONS                                    -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="portfolio" id="portfolio" aria-labelledby="collab-heading">
-
-    <div class="section-header">
-      <span class="section-label" aria-hidden="true">01</span>
-      <h2 class="section-title" id="collab-heading">Collaborations</h2>
-      <p class="section-sub">Current work with brands</p>
-    </div>
-
-    <div class="portfolio__grid" role="tabpanel">
-      <article class="portfolio__item portfolio__item--wide" data-category="collaboration" data-project="complice-skin" aria-label="Project: Complice">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/ROS/complice/images/pm-serum/pm-serum-06.jpg" alt="Complice — cinematic beauty campaign" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">Collaboration</span>
-          <h3 class="portfolio__title">
-            <img src="assets/ROS/complice/images/complice gold logo new.png" alt="Complice" class="portfolio__brand-logo" />
-          </h3>
-          <p class="portfolio__desc">A cinematic beauty campaign blending luxury skincare with immersive visual storytelling.</p>
-          <a href="/complice-collaboration" class="portfolio__link" aria-label="View Complice collaboration">View Collaboration <span aria-hidden="true">→</span></a>
-          <a href="/complice-case-study" class="portfolio__link" aria-label="View Complice case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  HOUSE CONCEPTS                                    -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="portfolio portfolio--concepts" id="concepts" aria-labelledby="concepts-heading">
-
-    <div class="section-header">
-      <span class="section-label" aria-hidden="true">01.1</span>
-      <h2 class="section-title" id="concepts-heading">House Concepts</h2>
-      <p class="section-sub">Original work from the house</p>
-    </div>
-
-    <div class="portfolio__grid" role="tabpanel">
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/rosso-fuga.html" aria-label="Project: Rosso Fuga">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/rosso-fuga/images/rf-print.jpg" alt="Rosso Fuga — lip lacquer concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Rosso Fuga</h3>
-          <p class="portfolio__desc">Amalfi, 1962. A jewel thief, a coast road and a carabinieri roadblock, in black and white. Only her lips keep their colour. Leave a mark.</p>
-          <a href="/rosso-fuga.html" class="portfolio__link" aria-label="View Rosso Fuga case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/passagem.html" aria-label="Project: Passagem">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/passagem/images/ps-cup.jpg" alt="Passagem — Lisbon coffee house concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Passagem</h3>
-          <p class="portfolio__desc">A bica with an engagement ring on the crema crosses Lisbon hand to hand. Some things are worth passing on.</p>
-          <a href="/passagem.html" class="portfolio__link" aria-label="View Passagem case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/pegasus.html" aria-label="Project: Pegasus">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/pegasus/images/pg-bolt.jpg" alt="Pegasus — hypercar concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Pegasus</h3>
-          <p class="portfolio__desc">A black stallion, a car under a cover, and the night the storm finally found them both. Born of the storm.</p>
-          <a href="/pegasus.html" class="portfolio__link" aria-label="View Pegasus case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/verrier.html" aria-label="Project: Verrier">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/verrier/images/vr-split.jpg" alt="Verrier — moonphase watch concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Verrier</h3>
-          <p class="portfolio__desc">A father on a night train out of Locarno. His daughter on the moon. Two moonphase watches that keep the same minute.</p>
-          <a href="/verrier.html" class="portfolio__link" aria-label="View Verrier case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/nuit-blanche.html" aria-label="Project: Nuit Blanche">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/nuit-blanche/images/nb-hud.jpg" alt="Nuit Blanche — night ski goggle concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="letter-spacing:0.06em;">Nuit Blanche</h3>
-          <p class="portfolio__desc">At midnight they kill the lights. She isn't done. A night ski goggle that sees by starlight, launched in Chamonix.</p>
-          <a href="/nuit-blanche.html" class="portfolio__link" aria-label="View Nuit Blanche case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/noireme.html" aria-label="Project: Noirème">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/noir%C3%A8me/images/02-candlelight.jpeg" alt="Noirème — house concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title" style="font-family:'Playfair Display','Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);letter-spacing:0.04em;">Noirème</h3>
-          <p class="portfolio__desc">A cinematic fragrance concept — conceived, directed, and produced entirely by the house.</p>
-          <a href="/noireme.html" class="portfolio__link" aria-label="View Noirème case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-
-      <article class="portfolio__item portfolio__item--wide" data-category="house-concept" data-href="/the-first-step.html" aria-label="Project: The First Step">
-        <div class="portfolio__media">
-          <img class="portfolio__img" src="assets/concepts/mars-ad-the-first-step/images/first-step-poster-eye.jpg" alt="The First Step — Mars ad concept by Realm of Steez" loading="lazy" />
-        </div>
-        <div class="portfolio__info">
-          <span class="portfolio__cat">House Concept</span>
-          <h3 class="portfolio__title">The First Step</h3>
-          <p class="portfolio__desc">A cinematic spec ad set on Mars — an athlete takes humanity's first step on alien soil. The universe watches.</p>
-          <a href="/the-first-step.html" class="portfolio__link" aria-label="View The First Step case study">View Case Study <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  ABOUT                                              -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="about" id="about" aria-labelledby="about-heading">
-
-    <div class="about__bg" aria-hidden="true"></div>
-
-    <div class="about__inner">
-      <div class="about__left">
-        <span class="section-label" aria-hidden="true">02</span>
-        <h2 class="section-title" id="about-heading">The House</h2>
-
-        <div class="about__text-block">
-          <p class="about__lead reveal-text">
-            Realm of Steez exists beyond the content studio. We are a short film production house — built for brands and visionaries who understand that the distance between content and cinema is the distance between noise and legacy.
-          </p>
-          <p class="about__body reveal-text">
-            Every project begins with one conviction: your brand deserves more than a video. We bring the full discipline of cinematic craft to every brief — precise visual language, deliberate composition, and sequences built to outlast the moment they were made for.
-          </p>
-          <p class="about__body reveal-text">
-            A collaboration with Realm of Steez means placing your vision in the hands of filmmakers who treat every story as worth telling beautifully. Not content. Not clips. Short films — authored with precision, care, and the uncompromising luxury your brand commands.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="about__right" aria-hidden="true">
-        <div class="about__img-wrap">
-          <div class="about__img-placeholder">
-            <img src="assets/ROS/about-mansion.jpg"
-                 alt="Realm of Steez — cinematic production house"
-                 class="about__img"
-                 loading="lazy" />
-          </div>
-          <div class="about__img-accent"></div>
-        </div>
-
-        <!-- Floating quote card -->
-        <blockquote class="about__quote">
-          <p>"Every frame is a world. Every world, a feeling."</p>
-          <cite>— Realm of Steez</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  SERVICES                                           -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="services" id="services" aria-labelledby="services-heading">
-
-    <div class="section-header">
-      <span class="section-label" aria-hidden="true">03</span>
-      <h2 class="section-title" id="services-heading">Services</h2>
-      <p class="section-sub">Private Cinematic Studio</p>
-    </div>
-
-    <!-- Manifesto -->
-    <div class="services__manifesto reveal">
-      <p class="services__manifesto-lead">"Film is not content. It is perception, engineered."</p>
-      <p class="services__manifesto-body">Every frame must justify its existence. Every silence must carry tension. Every release must feel inevitable.</p>
-      <p class="services__manifesto-body">We do not follow culture. We construct presence within it.</p>
-      <p class="services__manifesto-body">Realm of Steez exists for brands and visionaries who understand that image is power — and power is designed.</p>
-      <p class="services__manifesto-note">Realm of Steez operates as a private studio. Projects are accepted selectively. All films are constructed in-house.</p>
-    </div>
-
-    <!-- Formats -->
-    <div class="services__formats reveal">
-      <h3 class="services__formats-heading">Formats</h3>
-      <div class="services__formats-grid">
-        <div class="services__format-item">
-          <span class="services__format-name">Micro</span>
-          <span class="services__format-duration">6–20 seconds</span>
-        </div>
-        <div class="services__format-item">
-          <span class="services__format-name">Short</span>
-          <span class="services__format-duration">30–90 seconds</span>
-        </div>
-        <div class="services__format-item">
-          <span class="services__format-name">Long</span>
-          <span class="services__format-duration">2–10+ minutes</span>
-        </div>
-        <div class="services__format-item">
-          <span class="services__format-name">Still</span>
-          <span class="services__format-duration">10–20 editorial frames</span>
-        </div>
-      </div>
-      <p class="services__formats-note">Duration follows narrative strength — not request.</p>
-    </div>
-
-    <!-- Production Access -->
-    <div class="services__access-header reveal">
-      <h3 class="services__access-title">Production Access</h3>
-      <p class="services__access-sub">Three levels. One standard: precision.</p>
-    </div>
-
-    <div class="services__grid">
-
-      <article class="services__card" aria-label="Level I — Core">
-        <div class="services__level">Level I — Core</div>
-        <h3 class="services__title">Visual Architecture</h3>
-        <ul class="services__list" aria-label="Core inclusions">
-          <li>Concept direction</li>
-          <li>Script development</li>
-          <li>Character creation</li>
-          <li>Environment &amp; set design</li>
-          <li>Wardrobe styling</li>
-          <li>Structured edit</li>
-        </ul>
-        <p class="services__delivered">Delivered as a clean visual master.</p>
-        <p class="services__exclusions">No soundtrack. No sound design. No colour grade. No upscale finish.</p>
-        <p class="services__tagline">Foundation only.</p>
-      </article>
-
-      <article class="services__card services__card--accent" aria-label="Level II — Enhanced">
-        <div class="services__level">Level II — Enhanced</div>
-        <h3 class="services__title">Cinematic Completion</h3>
-        <p class="services__includes">Includes Core, plus:</p>
-        <ul class="services__list" aria-label="Enhanced inclusions">
-          <li>Custom-composed soundtrack</li>
-          <li>Sound design integration</li>
-          <li>Optional voiceover</li>
-          <li>2K master finish</li>
-          <li>Image refinement</li>
-        </ul>
-        <p class="services__tagline">Refined. Immersive. Release-ready.</p>
-      </article>
-
-      <article class="services__card" aria-label="Level III — Signature">
-        <div class="services__level">Level III — Signature</div>
-        <h3 class="services__title">Definitive Release</h3>
-        <p class="services__includes">Includes Enhanced, plus:</p>
-        <ul class="services__list" aria-label="Signature inclusions">
-          <li>Cinematic colour grade</li>
-          <li>4K master finish</li>
-          <li>Advanced refinement passes</li>
-          <li>Precision audio mastering</li>
-          <li>Trailer edit</li>
-          <li>Promotional cutdowns</li>
-          <li>Multi-format export suite</li>
-          <li>Website-ready master</li>
-          <li>Promotional still frames</li>
-        </ul>
-        <p class="services__tagline">This is not an edit. It is a controlled release.</p>
-      </article>
-
-    </div><!-- /services__grid -->
-
-    <!-- Editorial Stills -->
-    <div class="services__access-header reveal" style="margin-top: 56px;">
-      <h3 class="services__access-title">Editorial Stills</h3>
-      <p class="services__access-sub">Brand imagery. Constructed, not captured.</p>
-    </div>
-
-    <div class="services__editorial reveal">
-      <article class="services__card services__card--accent" aria-label="Editorial Stills — Brand Imagery">
-        <div class="services__level">Brand Imagery</div>
-        <h3 class="services__title">Editorial Frames</h3>
-        <p class="services__includes">For brands that need image before — or alongside — film.</p>
-        <ul class="services__list" aria-label="Editorial stills inclusions">
-          <li>10–20 editorial-grade still frames</li>
-          <li>Creative direction &amp; single mood</li>
-          <li>Product, lifestyle &amp; campaign contexts</li>
-          <li>Lookbook &amp; press-ready formats</li>
-          <li>High-resolution export suite</li>
-        </ul>
-        <p class="services__tagline">Image as argument. Every frame authored.</p>
-      </article>
-    </div>
-
-    <!-- Closing -->
-    <div class="services__closing reveal">
-      <p class="services__closing-lead">We collaborate with those who value intention over volume.</p>
-      <p class="services__closing-body">If your brand requires presence — not noise — Realm of Steez is open for private consultation.</p>
-    </div>
-
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  PHILOSOPHY BREAK                                   -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="philosophy" aria-label="Creative philosophy">
-    <div class="philosophy__bg" aria-hidden="true"></div>
-    <div class="philosophy__content">
-      <p class="philosophy__text reveal-text">
-        "We do not simply produce films.<br />We author experiences — each one<br />a testament to the power of<br />refined, purposeful vision."
-      </p>
-      <div class="philosophy__line" aria-hidden="true"></div>
-      <span class="philosophy__attr">Realm of Steez — Est. 2020</span>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  CONTACT                                            -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <section class="contact" id="contact" aria-labelledby="contact-heading">
-
-    <div class="contact__inner">
-
-      <div class="contact__left">
-        <span class="section-label" aria-hidden="true">04</span>
-        <h2 class="section-title" id="contact-heading">Submit a Brief</h2>
-        <p class="contact__sub">
-          We review every brief personally. We take on a small number of projects each year — only where the fit is genuine.
-        </p>
-        <p class="contact__sub contact__sub--note">
-          Not ready to submit a full brief? Reach us directly.
-        </p>
-        <div class="contact__avail">
-          <span class="contact__avail-dot" aria-hidden="true"></span>
-          Currently open for new collaborations
-        </div>
-        <div class="contact__details">
-          <div class="contact__detail">
-            <span class="contact__detail-label">Email</span>
-            <a href="mailto:studio@realmofsteez.com" class="contact__detail-value">studio@realmofsteez.com</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact__right">
-        <form class="contact__form" id="contactForm" name="contact" netlify action="/thank-you" method="post" novalidate aria-label="Brief submission form">
-          <input type="hidden" name="form-name" value="contact" />
-
-          <div class="form__row">
-            <div class="form__group">
-              <label class="form__label" for="name">Your Name</label>
-              <input class="form__input" type="text" id="name" name="name" autocomplete="name" placeholder="Full name" required aria-required="true" />
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="brand">Brand / Company</label>
-              <input class="form__input" type="text" id="brand" name="brand" placeholder="Your brand name" required aria-required="true" />
-            </div>
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="email">Email Address</label>
-            <input class="form__input" type="email" id="email" name="email" autocomplete="email" placeholder="your@email.com" required aria-required="true" />
-          </div>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label class="form__label" for="project-type">Project Type</label>
-              <select class="form__input form__select" id="project-type" name="project-type" required aria-required="true">
-                <option value="" disabled selected>Select type</option>
-                <option value="short-film">Short Film</option>
-                <option value="brand-campaign">Brand Campaign</option>
-                <option value="commercial">Commercial</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="timeline">Timeline</label>
-              <select class="form__input form__select" id="timeline" name="timeline" required aria-required="true">
-                <option value="" disabled selected>Select timeline</option>
-                <option value="0-3mo">Within 3 months</option>
-                <option value="3-6mo">3 – 6 months</option>
-                <option value="6-12mo">6 – 12 months</option>
-                <option value="exploring">Exploring / Open</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="budget">Budget Range</label>
-            <select class="form__input form__select" id="budget" name="budget" required aria-required="true">
-              <option value="" disabled selected>Select range</option>
-              <option value="under-25k">Under $25,000</option>
-              <option value="25-75k">$25,000 – $75,000</option>
-              <option value="75-150k">$75,000 – $150,000</option>
-              <option value="150k-plus">$150,000+</option>
-              <option value="discuss">Prefer to discuss</option>
-            </select>
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="vision">Your Brand & Vision</label>
-            <textarea class="form__input form__textarea" id="vision" name="vision" placeholder="Tell us about your brand and the story you want to tell..." required aria-required="true" rows="5"></textarea>
-          </div>
-
-          <button type="submit" class="form__submit" aria-label="Submit your brief">
-            <span>Submit Brief</span>
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <p class="form__success" id="formSuccess" role="status" aria-live="polite" hidden>Brief received. We will review and be in touch if there is a fit.</p>
-        </form>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════ -->
-  <!--  FOOTER                                             -->
-  <!-- ═══════════════════════════════════════════════════ -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__top">
-      <div class="footer__brand">
-        <span class="footer__logo">REALM OF STEEZ</span>
-        <p class="footer__tagline">Cinematic Short Film Production</p>
-      </div>
-      <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#films" class="footer__link">Films</a>
-        <a href="#portfolio" class="footer__link">Collaborations</a>
-        <a href="#concepts" class="footer__link">House Concepts</a>
-        <a href="#services" class="footer__link">Services</a>
-        <a href="/journal" class="footer__link">Journal</a>
-        <a href="/press" class="footer__link">Press</a>
-        <a href="#contact" class="footer__link">Contact</a>
-        <a href="/journal" class="footer__link">Journal</a>
-        <a href="/press" class="footer__link">Press</a>
-      </nav>
-    </div>
-    <div class="footer__bottom">
-      <p class="footer__copy">&copy; <span id="year"></span> Realm of Steez. All rights reserved.</p>
-      <p class="footer__legal">Crafted with precision.</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox overlay for portfolio -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio preview" hidden>
-    <button class="lightbox__close" id="lightboxClose" aria-label="Close preview">&times;</button>
-    <div class="lightbox__content" id="lightboxContent"></div>
-  </div>
-
-  <!-- Project Gallery Overlay -->
-  <div class="project-gallery" id="projectGallery" role="dialog" aria-modal="true" aria-label="Project gallery" hidden>
-    <div class="project-gallery__header">
-      <div class="project-gallery__meta">
-        <span class="project-gallery__cat" id="galleryCat"></span>
-        <h2 class="project-gallery__title" id="galleryTitle"></h2>
-        <p class="project-gallery__desc" id="galleryDesc"></p>
-      </div>
-      <button class="project-gallery__close" id="galleryClose" aria-label="Close project gallery">
-        <span>&times;</span>
-      </button>
-    </div>
-    <div class="project-gallery__grid" id="galleryGrid"></div>
-
-    <!-- Full-size image viewer within gallery -->
-    <div class="gallery-viewer" id="galleryViewer" hidden>
-      <button class="gallery-viewer__close" id="galleryViewerClose" aria-label="Close image">&times;</button>
-      <button class="gallery-viewer__prev" id="galleryPrev" aria-label="Previous image">&#8592;</button>
-      <button class="gallery-viewer__next" id="galleryNext" aria-label="Next image">&#8594;</button>
-      <img class="gallery-viewer__img" id="galleryViewerImg" src="" alt="" />
-      <video class="gallery-viewer__video" id="galleryViewerVideo" controls playsinline hidden></video>
-      <span class="gallery-viewer__count" id="galleryCount"></span>
+  <div class="stage stage--light" style="--stage-bg:#b8b7b3">
+    <div class="stage__pin">
+      <video muted playsinline preload="auto" poster="assets/workshop/vernice-build.jpg" src="assets/workshop/vernice-build.mp4"></video>
+      <div class="stage__meta"><p class="film__cat">3D Product &middot; Vernice</p><h3 class="film__name">ROSSO FUGA</h3><p class="film__line">The lacquer is poured, the collar spins down, the cap lands.</p><a class="film__link" href="/rosso-fuga">See the film &rarr;</a></div>
+      <p class="stage__step">Tube &middot; assembled<i></i></p>
     </div>
   </div>
+  <div class="stage stage--dark" style="--stage-bg:#2d1c07">
+    <div class="stage__pin">
+      <video muted playsinline preload="auto" poster="assets/workshop/complice-build.jpg" src="assets/workshop/complice-build.mp4"></video>
+      <div class="stage__meta"><p class="film__cat">3D Product &middot; Complice Skin</p><h3 class="film__name">COMPLICE</h3><p class="film__line">The dropper seats, the gold overcap closes. True labels, true proportions.</p><a class="film__link" href="/complice-collaboration">See the collaboration &rarr;</a></div>
+      <p class="stage__step">AM Serum &middot; sealed<i></i></p>
+    </div>
+  </div>
+  <div class="stage stage--dark" style="--stage-bg:#402916">
+    <div class="stage__pin">
+      <video muted playsinline preload="auto" poster="assets/workshop/moisturiser-build.jpg?v=3" src="assets/workshop/moisturiser-build.mp4?v=3"></video>
+      <div class="stage__meta"><p class="film__cat">3D Product &middot; Complice Skin</p><h3 class="film__name">24H MOISTURISER</h3><p class="film__line">The cream rises in the amber jar, the gold lid spins down and seats.</p><a class="film__link" href="/complice-collaboration">See the collaboration &rarr;</a></div>
+      <p class="stage__step">Jar &middot; filled and sealed<i></i></p>
+    </div>
+  </div>
+</section>
 
-  <script src="main.js?v=22"></script>
+<section class="house" id="about">
+  <div class="house__text">
+    <p class="films__label">The House</p>
+    <h2 class="house__title">Not content. <em>Short films.</em></h2>
+    <p class="house__lead">Realm of Steez is a short film production house, built for brands and visionaries who understand that the distance between content and cinema is the distance between noise and legacy.</p>
+    <p>Every project begins with one conviction: your brand deserves more than a video. Precise visual language, deliberate composition, and sequences built to outlast the moment they were made for.</p>
+  </div>
+  <figure class="house__img"><img src="assets/ROS/about-mansion.jpg" alt="Realm of Steez, the house" loading="lazy" /><figcaption>&ldquo;Every frame is a world. Every world, a feeling.&rdquo;</figcaption></figure>
+</section>
+
+<section class="access" id="services">
+  <div class="films__head"><div><p class="films__label">Production Access</p><h2 class="films__title">Three levels. One standard.</h2></div>
+    <p class="films__count">Micro 6&ndash;20 s &middot; Short 30&ndash;90 s &middot; Long 2&ndash;10+ min</p></div>
+  <div class="access__grid">
+    <article><p class="access__lvl">Level I &middot; Core</p><h3>Visual Architecture</h3><ul><li>Concept direction</li><li>Script development</li><li>Character creation</li><li>Environment &amp; set design</li><li>Wardrobe styling</li><li>Structured edit</li></ul><p class="access__tag">Foundation only. A clean visual master.</p></article>
+    <article class="is-key"><p class="access__lvl">Level II &middot; Enhanced</p><h3>Cinematic Completion</h3><ul><li>Everything in Core</li><li>Custom-composed soundtrack</li><li>Sound design</li><li>Optional voiceover</li><li>2K master finish</li><li>Image refinement</li></ul><p class="access__tag">Refined. Immersive. Release-ready.</p></article>
+    <article><p class="access__lvl">Level III &middot; Signature</p><h3>Definitive Release</h3><ul><li>Everything in Enhanced</li><li>Cinematic colour grade</li><li>4K master &amp; audio mastering</li><li>Trailer edit &amp; cutdowns</li><li>Multi-format export suite</li><li>Promotional still frames</li></ul><p class="access__tag">Not an edit. A controlled release.</p></article>
+    <article><p class="access__lvl">Brand Imagery</p><h3>Editorial Frames</h3><ul><li>10&ndash;20 editorial still frames</li><li>Creative direction, single mood</li><li>Product, lifestyle &amp; campaign</li><li>Lookbook &amp; press formats</li><li>High-resolution export suite</li></ul><p class="access__tag">Image as argument.</p></article>
+  </div>
+</section>
+
+<section class="brief" id="contact">
+  <div class="brief__left">
+    <p class="films__label">Start a Brief</p>
+    <h2 class="films__title">We take on a few films a year.</h2>
+    <p>Every brief is read personally, and we only say yes where the fit is real.</p>
+    <p class="brief__open"><span></span>Currently open for new collaborations</p>
+    <a class="brief__mail" href="mailto:studio@realmofsteez.com">studio@realmofsteez.com</a>
+  </div>
+  <form class="brief__form" id="contactForm" name="contact" netlify action="/thank-you" method="post">
+    <input type="hidden" name="form-name" value="contact" />
+    <label>Your name<input name="name" autocomplete="name" required /></label>
+    <label>Brand / company<input name="brand" required /></label>
+    <label class="w2">Email<input type="email" name="email" autocomplete="email" required /></label>
+    <label>Project<select name="project-type" required><option value="" disabled selected>Select</option><option value="short-film">Short film</option><option value="brand-campaign">Brand campaign</option><option value="commercial">Commercial</option><option value="other">Other</option></select></label>
+    <label>Timeline<select name="timeline" required><option value="" disabled selected>Select</option><option value="0-3mo">Within 3 months</option><option value="3-6mo">3 to 6 months</option><option value="6-12mo">6 to 12 months</option><option value="exploring">Exploring</option></select></label>
+    <label class="w2">Budget<select name="budget" required><option value="" disabled selected>Select</option><option value="under-25k">Under $25,000</option><option value="25-75k">$25,000 to $75,000</option><option value="75-150k">$75,000 to $150,000</option><option value="150k-plus">$150,000+</option><option value="discuss">Prefer to discuss</option></select></label>
+    <label class="w2">Your brand and vision<textarea name="vision" rows="4" required></textarea></label>
+    <button type="submit" class="w2"><b>Submit brief</b> <span>&rarr;</span></button>
+    <p class="brief__done w2" hidden>Brief received. We read every one, and we will be in touch if there is a fit.</p>
+  </form>
+</section>
+
+<div class="theatre" aria-hidden="true"><p class="theatre__t"></p><button class="theatre__x">Close &times;</button><video controls playsinline preload="none"></video></div>
+<footer class="foot">
+  <span class="pill__logo">REALM OF STEEZ</span>
+  <nav><a href="#films">Work</a><a href="#about">The House</a><a href="#services">Services</a><a href="/journal">Journal</a><a href="/press">Press</a><a href="#contact">Contact</a><a href="https://www.instagram.com/realmofsteeze/" target="_blank" rel="noopener">Instagram</a><a href="https://www.threads.net/@realmofsteeze" target="_blank" rel="noopener">Threads</a></nav>
+  <p>&copy; 2026 Realm of Steez</p>
+</footer>
+
+<script>
+// The Crown: a photoreal frame + its depth map. The pixels shift by depth as the mouse moves, so the photo opens up in 3D.
+(function(){
+  const canvas = document.getElementById('crown');
+  const gl = canvas.getContext('webgl', { antialias: false, premultipliedAlpha: false });
+  if (!gl) { document.body.classList.add('lit'); canvas.style.background = "url(assets/crown/crown-hero.jpg) center/cover"; return; }
+  const vs = `attribute vec2 p; varying vec2 v; void main(){ v = p*0.5+0.5; v.y = 1.0-v.y; gl_Position = vec4(p,0.,1.); }`;
+  const fs = `precision highp float; varying vec2 v;
+    uniform sampler2D img, dep; uniform vec2 mouse, res; uniform float t, aspect, zoom, hover, intro, dive; uniform vec4 hbox;
+    void main(){
+      vec2 uv = v;
+      // cover-fit the 16:9 frame to the window, crest kept centred
+      float a = res.x/res.y;
+      if (a > aspect) { uv.y = (uv.y-0.5)*aspect/a+0.5; } else { uv.x = (uv.x-0.5)*a/aspect+0.5; }
+      uv.y -= 0.055;                                              // the scene sits a little lower: the halo clears the nav
+      float zm = zoom;
+      if (a < 1.0) { zm *= 0.74; uv.y += 0.21; }                   // phones: pull back so the crest sits high and whole, the copy below it
+      uv = (uv-0.5)/zm+0.5;
+      vec2 drift = vec2(sin(t*0.21), cos(t*0.17))*0.25;           // a slow breath when the mouse is still
+      vec2 m = mouse + drift;
+      float d = texture2D(dep, uv).r;
+      // three samples refine the offset so near edges don't smear
+      vec2 off = m*0.022;
+      for (int i=0;i<3;i++){ d = texture2D(dep, uv - off*(d-0.35)).r; }
+      vec2 st = uv - off*(d-0.35);
+      vec3 c = texture2D(img, st).rgb;
+      // the beam breathes: a soft column of warm light down the centre, a touch brighter now and then
+      float beam = exp(-pow((st.x-0.5)/0.07,2.))*smoothstep(1.0,0.0,st.y)*(0.012+0.008*sin(t*1.3));
+      c += vec3(1.0,0.82,0.5)*beam;
+      // the intro: dark, the beam switches on, then the light spreads out from the crest
+      float r0 = length((v-vec2(0.5,0.46))*vec2(res.x/res.y,1.0));
+      float lit = clamp(intro*2.6 - r0*1.1 - 0.35, 0.0, 1.0);
+      float col = exp(-pow((v.x-0.5)/0.035,2.))*smoothstep(0.0,0.25,intro)*(1.0-smoothstep(0.55,1.0,intro));
+      c = c*lit*lit*(3.0-2.0*lit) + vec3(1.0,0.84,0.55)*col*0.32;
+      // the ring spins: the gold band itself is re-sampled round its circle, a highlight riding with it
+      vec2 C = vec2(0.4870, 0.4472), Rr = vec2(0.1229, 0.2352);
+      vec2 q = (st - C)/Rr; float rr = length(q), ang = atan(q.y, q.x);
+      float band = smoothstep(0.935, 0.965, rr)*(1.0 - smoothstep(1.02, 1.05, rr));
+      float rot = t*0.32;
+      vec2 sr = C + Rr*rr*vec2(cos(ang - rot), sin(ang - rot));
+      vec3 spun = texture2D(img, sr).rgb;
+      c = mix(c, spun*1.08, band);
+      float gold = smoothstep(0.25, 0.6, dot(c, vec3(0.3,0.59,0.11)));
+      float a1 = mod(ang - t*0.32*1.6 + 3.14159, 6.28318) - 3.14159;
+      c += vec3(1.0,0.88,0.6)*band*exp(-a1*a1/0.02)*0.6;
+      // the R keeps shining: a soft diagonal sheen crosses the letter every few seconds
+      float inR = 1.0 - smoothstep(0.72, 0.80, rr);
+      float sweep = fract(t/6.5)*2.4 - 0.7;                        // position of the sheen across the crest
+      float dd = (q.x*0.8 + q.y*0.6) - (sweep*2.0 - 1.0);
+      c += vec3(1.0,0.9,0.65)*inR*gold*exp(-dd*dd/0.012)*0.45;
+      // the pane under the cursor brightens a touch
+      if (hover > 0.5 && st.x > hbox.x && st.x < hbox.z && st.y > hbox.y && st.y < hbox.w) c *= 1.18;
+      c *= smoothstep(-0.02, 0.015, uv.y)*smoothstep(1.02, 0.985, uv.y);                         // above the frame: black under the nav, never a smeared edge
+      c *= 1.0 - smoothstep(0.72, 1.0, dive);                     // the dive ends in the dark of the R, the films come up out of it
+      gl_FragColor = vec4(c,1.);
+    }`;
+  function sh(type, src){ const o = gl.createShader(type); gl.shaderSource(o, src); gl.compileShader(o); return o; }
+  const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); gl.useProgram(pr);
+  const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  function tex(unit, src, done){
+    const tx = gl.createTexture(), im = new Image();
+    im.onload = () => { gl.activeTexture(gl.TEXTURE0+unit); gl.bindTexture(gl.TEXTURE_2D, tx);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, im);
+      [gl.TEXTURE_WRAP_S, gl.TEXTURE_WRAP_T].forEach(k => gl.texParameteri(gl.TEXTURE_2D, k, gl.CLAMP_TO_EDGE));
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR); done(); };
+    im.src = src;
+  }
+  const U = n => gl.getUniformLocation(pr, n);
+  let ready = 0, tIn = 0; const go = () => { if (++ready === 2) { gl.uniform1i(U('img'),0); gl.uniform1i(U('dep'),1); tIn = performance.now(); document.body.classList.add('lit'); requestAnimationFrame(tick); } };
+  // the living plate: our films playing inside the glass; the still is the poster until the video is ready
+  const vid = document.createElement('video'); vid.src = Math.max(screen.width, screen.height)*Math.min(devicePixelRatio,2) > 2200 ? 'assets/crown/crown-loop.mp4?v=5' : 'assets/crown/crown-loop-1080.mp4?v=1';   // phones get the lighter 1080 loop
+  vid.muted = true; vid.loop = true; vid.playsInline = true; vid.autoplay = true; vid.preload = 'auto';
+  let vidReady = false;
+  vid.addEventListener('playing', () => { vidReady = true; });
+  vid.play().catch(()=>{});
+  tex(0, 'assets/crown/crown-hero.jpg', go); tex(1, 'assets/crown/crown-depth.png', go);
+  const mouse = [0,0], look = [0,0];
+  addEventListener('pointermove', e => { mouse[0] = e.clientX/innerWidth*2-1; mouse[1] = e.clientY/innerHeight*2-1; });
+  // each glass pane is a door to that piece of work
+  const PANES = [
+    { name: 'Passagem', tag: 'House Concept · Lisbon', href: '/passagem', poly: [[405,150],[565,155],[600,200],[590,280],[540,340],[420,365],[395,300]] },
+    { name: 'Pegasus', tag: 'House Concept · The Salt Flats', href: '/pegasus', poly: [[405,440],[545,440],[585,510],[570,600],[500,680],[420,665],[400,560]] },
+    { name: 'Verrier', tag: 'House Concept · Locarno', href: '/verrier', poly: [[495,740],[600,738],[650,790],[665,850],[560,845],[500,800]] },
+    { name: 'Rosso Fuga', tag: 'House Concept · Amalfi, 1962', href: '/rosso-fuga', poly: [[1240,120],[1360,95],[1490,140],[1520,230],[1480,340],[1360,395],[1280,375],[1235,260]] },
+    { name: 'Complice', tag: 'Collaboration', href: '/complice-collaboration', poly: [[1290,540],[1400,470],[1545,495],[1550,600],[1510,760],[1420,770],[1300,690],[1280,600]] },
+  ].map(p => { const u = p.poly.map(([x,y]) => [x/1920, y/1080]);
+    return { ...p, uv: u, box: [Math.min(...u.map(a=>a[0])), Math.min(...u.map(a=>a[1])), Math.max(...u.map(a=>a[0])), Math.max(...u.map(a=>a[1]))] }; });
+  const tip = document.createElement('div'); tip.className = 'pane-tip'; document.body.appendChild(tip);
+  let hot = null;
+  // scrolling dives into the crest: the hero holds while the camera pushes deep into the R
+  const wrap = document.querySelector('.hero-wrap');
+  function diveP(){ const span = wrap.offsetHeight - innerHeight; return span > 0 ? Math.min(1, Math.max(0, scrollY/span)) : 0; }
+  function zoomFor(p){ const e = p*p*(3-2*p); return 1.04 + e*2.6; }
+  function screenToUV(x, y){              // the same cover-fit + zoom as the shader
+    const r = canvas.getBoundingClientRect(); let u = (x-r.left)/r.width, v = (y-r.top)/r.height;
+    const a = r.width/r.height, asp = 2560/1440, z = zoomFor(diveP());
+    if (a > asp) v = (v-0.5)*asp/a+0.5; else u = (u-0.5)*a/asp+0.5;
+    v -= 0.055; let zz = z; if (a < 1) { zz *= 0.74; v += 0.21; }
+    return [(u-0.5)/zz+0.5, (v-0.5)/zz+0.5];
+  }
+  function inside(pt, poly){ let c = false; for (let i=0,j=poly.length-1;i<poly.length;j=i++){ const [xi,yi]=poly[i],[xj,yj]=poly[j];
+    if ((yi>pt[1])!==(yj>pt[1]) && pt[0] < (xj-xi)*(pt[1]-yi)/(yj-yi)+xi) c = !c; } return c; }
+  canvas.addEventListener('pointermove', e => {
+    const uv = screenToUV(e.clientX, e.clientY); hot = PANES.find(p => inside(uv, p.uv)) || null;
+    canvas.style.cursor = hot ? 'pointer' : '';
+    if (hot) { tip.innerHTML = `<span>${hot.tag}</span>${hot.name} <em>&rarr;</em>`; tip.style.transform = `translate(${e.clientX+18}px, ${e.clientY+14}px)`; tip.classList.add('on'); }
+    else tip.classList.remove('on');
+  });
+  canvas.addEventListener('pointerleave', () => { hot = null; tip.classList.remove('on'); });
+  canvas.addEventListener('click', () => { if (hot) location.href = hot.href; });
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){ const r = Math.min(devicePixelRatio, 2); canvas.width = canvas.clientWidth*r; canvas.height = canvas.clientHeight*r; gl.viewport(0,0,canvas.width,canvas.height); }
+  addEventListener('resize', size); size();
+  const t0 = performance.now();
+  function tick(now){
+    look[0] += (mouse[0]-look[0])*0.06; look[1] += (mouse[1]-look[1])*0.06;
+    const t = reduce ? 0 : (now-t0)/1000, sc = diveP();
+    document.documentElement.style.setProperty('--dive', sc.toFixed(3));
+    gl.uniform2f(U('mouse'), reduce?0:look[0], reduce?0:look[1]); gl.uniform2f(U('res'), canvas.width, canvas.height);
+    gl.uniform1f(U('hover'), hot ? 1 : 0); if (hot) gl.uniform4f(U('hbox'), ...hot.box);
+    gl.uniform1f(U('t'), t); gl.uniform1f(U('intro'), reduce ? 1 : Math.min(1, (now-tIn)/1900)); gl.uniform1f(U('aspect'), 2560/1440); gl.uniform1f(U('zoom'), zoomFor(sc)); gl.uniform1f(U('dive'), sc);
+    if (vidReady && vid.readyState >= 2) { gl.activeTexture(gl.TEXTURE0); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, vid); }
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); requestAnimationFrame(tick);
+  }
+})();
+// scroll drives the builds frame by frame, and the films drift against the page
+(function(){
+  const stages = [...document.querySelectorAll('.stage')].map(el => ({ el, v: el.querySelector('video'), cur: 0, woke: false }));
+  const films = [...document.querySelectorAll('.film')];
+  function frame(){
+    const H = innerHeight;
+    for (const s of stages) {
+      const r = s.el.getBoundingClientRect(), span = r.height - H;
+      const p = Math.min(1, Math.max(0, -r.top / span));
+      s.el.style.setProperty('--p', p.toFixed(3));
+      if (r.top < H*1.5 && r.bottom > -H*0.5) {
+        if (!s.woke) { s.woke = true;                     // the whole build is pulled into memory once, so every frame seeks instantly
+          fetch(s.v.currentSrc || s.v.src).then(r => r.blob()).then(b => { s.v.src = URL.createObjectURL(b); s.v.load(); }).catch(()=>{}); }
+        const d = s.v.duration || 0;
+        if (d) { const target = p*(d - 0.05); s.cur += (target - s.cur)*0.22;
+          if (!s.v.seeking && Math.abs(s.v.currentTime - s.cur) > 0.012) s.v.currentTime = s.cur; }
+      }
+    }
+    for (const f of films) {
+      const r = f.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < H) f.style.setProperty('--py', ((r.top + r.height/2 - H/2) * -0.12).toFixed(1) + 'px');
+    }
+    requestAnimationFrame(frame);
+  }
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(frame);
+})();
+// the brief goes to the Netlify Forms backend whichever host serves the page (GitHub Pages has no form handling)
+(function(){
+  const f = document.getElementById('contactForm'); if (!f) return;
+  const btn = f.querySelector('button b'), done = f.querySelector('.brief__done');
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    if (!f.reportValidity()) return;
+    btn.textContent = 'Sending\u2026';
+    try {
+      const endpoint = location.hostname.endsWith('netlify.app') ? '/' : 'https://realm-of-steez-studio.netlify.app/';
+      await fetch(endpoint, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() });
+      f.reset(); done.hidden = false; btn.textContent = 'Submit brief';
+    } catch (err) { btn.textContent = 'Could not send. Email studio@realmofsteez.com'; }
+  });
+})();
+// films only play while they are on screen: saves data and battery, and keeps the page smooth
+(function(){
+  const vids = [...document.querySelectorAll('.film video')];
+  vids.forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.play().catch(()=>{}); else e.target.pause(); }), { rootMargin: '200px 0px' });
+  vids.forEach(v => io.observe(v));
+})();
+// the theatre: a full film with its own sound, over the page; Esc or Close returns to the scroll
+(function(){
+  const th = document.querySelector('.theatre'), v = th.querySelector('video'), t = th.querySelector('.theatre__t');
+  function close(){ th.classList.remove('on'); th.setAttribute('aria-hidden','true'); v.pause(); v.removeAttribute('src'); v.load(); }
+  document.querySelectorAll('.film__play').forEach(b => b.addEventListener('click', () => {
+    t.innerHTML = b.dataset.title; v.src = b.dataset.film; v.muted = false; th.classList.add('on'); th.setAttribute('aria-hidden','false'); v.play().catch(()=>{}); }));
+  th.querySelector('.theatre__x').addEventListener('click', close);
+  th.addEventListener('click', e => { if (e.target === th) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && th.classList.contains('on')) close(); });
+})();
+</script>
 </body>
 </html>

@@ -253,6 +253,7 @@
       gap: clamp(32px, 6vw, 64px);
       align-items: start;
     }
+    .case + .case { margin-top: 72px; }
     .case__image {
       aspect-ratio: 9 / 16;
       overflow: hidden;
@@ -294,6 +295,7 @@
       transition: color 0.3s;
     }
     .case__link:hover { color: var(--white); }
+    .case__link svg { width: 18px; height: 18px; flex-shrink: 0; }
 
     /* ── Availability ── */
     .avail {
@@ -519,6 +521,29 @@
     <!-- Case study -->
     <div class="deck__section">
       <p class="deck__heading">Recent Work</p>
+      <div class="case">
+        <div class="case__image">
+          <img src="assets/concepts/the-package/images/tp-verified-vertical.jpg" alt="The Package for Mercenta — Realm of Steez" loading="lazy" />
+        </div>
+        <div class="case__content">
+          <div>
+            <span class="case__sub">2026 · Collaboration · Mercenta</span>
+            <h2 class="case__brand">The Package</h2>
+          </div>
+          <p class="case__body">
+            Mercenta makes small brands visible to the AI assistants people now ask what to buy. We told it as a spy heist: an old craftsman hands a plain brown parcel to an agent, who carries it through a tower of scanners, rival products and laser filters to the one top slot.
+          </p>
+          <p class="case__body">
+            Every obstacle is a real reason a product gets passed over, and every way through is the fix. The parcel never opens, so whoever is watching sees their own product inside it.
+          </p>
+          <a href="/the-package" class="case__link">
+            View Full Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
       <div class="case">
         <div class="case__image">
           <img src="assets/Complice Collaboration/complice/still-hero.jpg" alt="Complice AM Serum — Realm of Steez" loading="lazy" />

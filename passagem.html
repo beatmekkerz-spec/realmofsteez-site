@@ -421,6 +421,25 @@
     .image-grid img { aspect-ratio: 9/16; }
     .narration-pair__img { min-height: 80vh; max-height: 100vh; }
     .narration__img { object-position: center 40%; }
+
+    /* ── Phones ── */
+    @media (max-width: 768px) {
+      .section { padding: 64px 22px; }
+      .hero__title { font-size: clamp(2.4rem, 12vw, 3.4rem); letter-spacing: 0.04em; }
+      .hero__subtitle { font-size: 1.05rem; }
+      .stats { grid-template-columns: 1fr 1fr; gap: 28px 20px; margin-top: 40px; }
+      .stat__value { font-size: 2rem; }
+      .narration-pair { min-height: 0; }
+      .narration-pair__img { height: auto; min-height: 0; max-height: none; aspect-ratio: 4/5; object-fit: cover; }
+      .narration-pair__content { padding: 36px 22px 44px; }
+      .narration { min-height: 70vh; }
+      .narration--tall { min-height: 80vh; }
+      .narration--short { min-height: 45vh; }
+      .narration__text { font-size: 1.35rem; padding: 0 22px; }
+      .specs { grid-template-columns: 1fr; gap: 32px; }
+      .image-grid { gap: 6px; }
+      .video-wrap--vertical { max-width: 100%; }
+    }
 </style>
 <script>window.RS_SOCIAL=[["Instagram","https://www.instagram.com/realmofsteeze/"],["Threads","https://www.threads.net/@realmofsteeze"]];</script>
 <link rel="stylesheet" href="/site-chrome.css?v=1" />
